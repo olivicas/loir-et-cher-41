@@ -119,6 +119,12 @@ def main():
 
             title = first_text(item.get("label"))
             start, end = get_date(item)
+            if item == payload["objects"][0]:
+                print("TEST TITRE :", repr(title))
+                print("TEST DATE DEBUT :", repr(start))
+                print("TEST DATE FIN :", repr(end))
+                print("TEST PERIODES :", len(item.get("takesPlaceAt", [])))
+
 
             if not title or not start:
                 continue
