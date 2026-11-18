@@ -341,8 +341,18 @@ function renderPlaces(filter='all'){const data=filter==='all'?places:places.filt
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderPlaces(b.dataset.filter)}));
 
 function renderEvents() {
-    const f = document.querySelector('#seasonFilter').value;
-    const list = events.filter(e => f === 'all' || e.season === f);
+  const list = events
+    .filter(e => f === 'all' || e.season === f)
+    .sort((a, b) => {
+        const dateA = a.startDate ? new Date(a.startDate) : null;
+        const dateB = b.startDate ? new Date(b.startDate) : null;
+
+        if (!dateA && !dateB) return 0;
+        if (!dateA) return 1;
+        if (!dateB) return -1;
+
+        return dateA - dateB;
+    });
 
     document.querySelector('#eventsGrid').innerHTML = list.map(e => `
         <article class="rounded-2xl border border-white/15 bg-white/10 p-6">
