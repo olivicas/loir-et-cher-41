@@ -108,7 +108,7 @@ def main():
                 "addressLocality", "name"
          ])
 
-            events.append({
+         events.append({
                 "title": title,
                 "city": city or "Loir-et-Cher",
                 "desc": description,
@@ -117,7 +117,7 @@ def main():
                 "url": item.get("uri", ""),
                 "category": "Événement",
                 "season": "",
-            })
+         })
 
         next_page = payload.get("meta", {}).get("next")
         url = urljoin("https://api.datatourisme.fr", next_page) if next_page else None
