@@ -1,1 +1,1262 @@
-[]
+[
+  {
+    "title": "Marché hebdomadaire de Lamotte-Beuvron",
+    "city": "Lamotte-Beuvron",
+    "desc": "",
+    "startDate": "2025-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/c3045736-f194-31b7-8d02-296bb81912ad",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché des Rottes à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-01-01",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/76853449-2e30-3bcf-abad-4cc4b10cc741",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché Place Saint-Martin à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-01-01",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/31b64795-6b3d-36a7-946c-8035ce2f025a",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché hebdomadaire de Contres",
+    "city": "Le Controis-en-Sologne",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/d83e4ab6-0c43-368c-bf72-4ddb43f6fe36",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché de Montoire-sur-le Loir",
+    "city": "Montoire-sur-le-Loir",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/a36b1231-44a3-3d0c-9033-9524a4444001",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marchés hebdomadaires de Montrichard",
+    "city": "Montrichard Val de Cher",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-25",
+    "url": "https://data.datatourisme.fr/15/2f6a2241-51e1-3f5c-a134-abe7cf8f9889",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché hebdomadaire de Pezou",
+    "city": "Pezou",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/33020be7-a8ed-32d6-b383-bb280e51e615",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Le Petit marché à Saint-Firmin-des-Près",
+    "city": "Saint-Firmin-des-Prés",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/73e859ec-234f-36e4-8890-dad3a790cf01",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché hebdomadaire de Selles-sur-Cher",
+    "city": "Selles-sur-Cher",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/00e6b9df-e88d-348c-ac14-593328d4f97f",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché hebdomadaire de la Ville-aux-Clercs",
+    "city": "La Ville-aux-Clercs",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/5173c273-3836-336b-8f91-7edd4dad38e3",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché bio de Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/3df8d5dc-32b4-3301-aad2-e41c244972b7",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché à Mondoubleau",
+    "city": "Mondoubleau",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/4035d83f-3b34-3032-b44f-525bac37ce25",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché hebdomadaire de Mennetou-sur-Cher",
+    "city": "Mennetou-sur-Cher",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/0cbf0025-f1cd-3444-a405-5c37667eee41",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché à Savigny-sur-Braye",
+    "city": "Savigny-sur-Braye",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/7c27550a-dd3c-38a1-8d1b-7aad6b88647b",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché de Naveil",
+    "city": "Naveil",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/aea7d29a-fd28-3226-b861-c06128955f49",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché percheron de Mondoubleau",
+    "city": "Mondoubleau",
+    "desc": "",
+    "startDate": "2026-01-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/e07101ef-8d31-3b74-a657-b3c66397dd11",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché hebdomadaire de Saint-Aignan",
+    "city": "Saint-Aignan",
+    "desc": "",
+    "startDate": "2026-01-03",
+    "endDate": "2026-12-26",
+    "url": "https://data.datatourisme.fr/15/c313b3b9-0329-3b3d-a1f0-f0babfd1540f",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Découvertes gastronomiques au Parc et Château de Beauregard à Cellettes",
+    "city": "Cellettes",
+    "desc": "",
+    "startDate": "2026-01-06",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/6166770c-760c-3c9e-ad34-da02fb677f25",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Exposition « Reflets Lointains, l’Asie rêvée des collectionneurs ».",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-09-19",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/5b06ae33-d1b2-35b3-8369-1b35ba2bcc66",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Exposition Pierre Loison (1816-1886)",
+    "city": "Mer",
+    "desc": "",
+    "startDate": "2026-09-19",
+    "endDate": "2026-12-13",
+    "url": "https://data.datatourisme.fr/15/2b84aa31-2296-3036-931e-8cf4605e797e",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Exposition à Chambord - \"Les Festins de Chambord\"",
+    "city": "Chambord",
+    "desc": "",
+    "startDate": "2026-09-26",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/1546d992-1c58-3682-af49-35685b2722b3",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Calder au coeur de la France - Château de Chambord",
+    "city": "Chambord",
+    "desc": "",
+    "startDate": "2026-10-15",
+    "endDate": "2027-08-29",
+    "url": "https://data.datatourisme.fr/15/87d0eb3a-2b6d-321f-afcc-53639c59fde2",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "MonstroZoo au ZooParc de Beauval",
+    "city": "Saint-Aignan",
+    "desc": "",
+    "startDate": "2026-10-17",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/423f986f-378d-3a5d-8454-04cf68d1d379",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Exposition Max Ernst",
+    "city": "Chaumont-sur-Loire",
+    "desc": "",
+    "startDate": "2026-11-02",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/41c69442-d1bf-357e-b342-a6af1091137b",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Exposition au muséum d'histoire naturelle de Blois",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-11-02",
+    "endDate": "2026-12-18",
+    "url": "https://data.datatourisme.fr/15/f3e4228d-ae19-3ab7-88f2-87ae29a98fc6",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Visite insolite du château royal de Blois",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-11-08",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/b720a79f-8bde-382b-845b-78d6d0eb3d45",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "À bonne école ! - Exposition des Archives départementales à Vineuil",
+    "city": "Vineuil",
+    "desc": "",
+    "startDate": "2026-11-12",
+    "endDate": "2027-03-12",
+    "url": "https://data.datatourisme.fr/15/e152cfa0-6e5d-3108-b85e-08c20f3fa20b",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Noël au ZooParc de Beauval",
+    "city": "Saint-Aignan",
+    "desc": "",
+    "startDate": "2026-11-14",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/9bfbe953-e716-311f-8c14-d3eb81527b3f",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"George sans s\" à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-18",
+    "url": "https://data.datatourisme.fr/15/8bf79fdf-6af6-380a-ad2e-31cf1fc89471",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Soirée de projection « Le sanglier\" de Laurent Charbonnier",
+    "city": "Vineuil",
+    "desc": "",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-20",
+    "url": "https://data.datatourisme.fr/15/13ebc2f1-f76e-34da-9a32-fa4e59050323",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "bd BOUM le Festival de Bd de Blois",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-22",
+    "url": "https://data.datatourisme.fr/15/b34df197-1f24-3b71-b968-673a655887c0",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Instants Nature - Soirée de projection à Vineuil",
+    "city": "Vineuil",
+    "desc": "",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-20",
+    "url": "https://data.datatourisme.fr/15/3d328a14-dca2-3ebe-acd3-d22d604e25da",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Salon du livre d'Art et d'Histoire au château de Cheverny",
+    "city": "Cheverny",
+    "desc": "",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-22",
+    "url": "https://data.datatourisme.fr/15/b482f23c-fef5-369c-b054-3bbed2ef6371",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "MUSICOSCOPIE à Saint Agil",
+    "city": "Couëtron-au-Perche",
+    "desc": "",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-20",
+    "url": "https://data.datatourisme.fr/15/c9c549f9-5e8d-3456-aec5-88eabf1d7463",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Taille de restauration des fruitiers à Boursay",
+    "city": "Boursay",
+    "desc": "",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "url": "https://data.datatourisme.fr/15/670410c4-b7f6-34f2-98df-eccbb80a56cf",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Mois du film documentaire à Selommes",
+    "city": "Selommes",
+    "desc": "",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "url": "https://data.datatourisme.fr/15/f77af9a3-485d-3baa-a71c-10b6865ca8fb",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché de Noël à Naveil",
+    "city": "Naveil",
+    "desc": "",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-22",
+    "url": "https://data.datatourisme.fr/15/61145d13-3e40-3578-8264-8f4fcf66aaea",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Vents d’Automne – de la Neva aux Rives de l’Arno",
+    "city": "Le Controis-en-Sologne",
+    "desc": "",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "url": "https://data.datatourisme.fr/15/5471eb77-9a84-3343-8152-e7948cac5b81",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Expositions Chaumont-Photo-sur-Loire",
+    "city": "Chaumont-sur-Loire",
+    "desc": "",
+    "startDate": "2026-11-22",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/ff96cf5a-7532-35ea-936d-f5052220fc82",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Concours de dressage - Circuit départemental",
+    "city": "La Chaussée-Saint-Victor",
+    "desc": "",
+    "startDate": "2026-11-22",
+    "endDate": "2026-11-22",
+    "url": "https://data.datatourisme.fr/15/e38eb878-eed7-3b2a-ac36-9329b2a73313",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché de la Vallée-de-Ronsard à Couture-sur-Loir",
+    "city": "Vallée-de-Ronsard",
+    "desc": "",
+    "startDate": "2026-11-22",
+    "endDate": "2026-11-22",
+    "url": "https://data.datatourisme.fr/15/5dfbff5b-63a9-3530-bb16-32ee50d4dc53",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Champignons en Sologne",
+    "city": "Lamotte-Beuvron",
+    "desc": "",
+    "startDate": "2026-11-22",
+    "endDate": "2026-11-22",
+    "url": "https://data.datatourisme.fr/15/eae859e3-b741-3447-ba24-34f48c43c94a",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché de Noël à Pezou",
+    "city": "Pezou",
+    "desc": "",
+    "startDate": "2026-11-22",
+    "endDate": "2026-11-22",
+    "url": "https://data.datatourisme.fr/15/8779c9bd-a5b3-3a40-81de-1b007050d257",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché de Selommes",
+    "city": "Selommes",
+    "desc": "",
+    "startDate": "2026-11-22",
+    "endDate": "2026-11-22",
+    "url": "https://data.datatourisme.fr/15/1cc52a9a-0d09-3506-b4fb-c32f2d0db90a",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Clap 41 - \"Les Petites Victoires\" à La Madeleine-Villefrouin",
+    "city": "La Madeleine-Villefrouin",
+    "desc": "",
+    "startDate": "2026-11-24",
+    "endDate": "2026-11-24",
+    "url": "https://data.datatourisme.fr/15/aed91c70-db05-37f4-bb82-7a2691e0a06d",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "CabarettO",
+    "city": "Romorantin-Lanthenay",
+    "desc": "",
+    "startDate": "2026-11-25",
+    "endDate": "2026-11-25",
+    "url": "https://data.datatourisme.fr/15/5f71bc4e-e3ef-38cc-9cac-e1e6cfd65232",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "À travers l'histoire des Huguenots",
+    "city": "Talcy",
+    "desc": "",
+    "startDate": "2026-11-26",
+    "endDate": "2026-11-26",
+    "url": "https://data.datatourisme.fr/15/29c9faa5-5465-3eab-910d-02173d7125a3",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"Gabriel Saglio à la Bougie\" à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-27",
+    "url": "https://data.datatourisme.fr/15/aa7db760-8665-3f45-9e7b-4ec38ee20ff9",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Abbaye on Ice à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-11-27",
+    "endDate": "2027-01-17",
+    "url": "https://data.datatourisme.fr/15/4b2d6efd-28aa-3023-ac30-47494f3646dc",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Festival du Film - Le rendez-vous de l'homme et de l'animal",
+    "city": "Lamotte-Beuvron",
+    "desc": "",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29",
+    "url": "https://data.datatourisme.fr/15/b6485da0-caaf-30ad-b433-d44db8a11b51",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Noël au château de Chaumont-sur-Loire - Chasse au trésor",
+    "city": "Chaumont-sur-Loire",
+    "desc": "",
+    "startDate": "2026-11-28",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/7440dc8b-88dd-36f8-a862-4d557937d66d",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "MARCHE DE NOEL",
+    "city": "Chaumont-sur-Tharonne",
+    "desc": "",
+    "startDate": "2026-11-28",
+    "endDate": "2026-11-28",
+    "url": "https://data.datatourisme.fr/15/132c8341-bfc5-3358-bfe5-7503ea123aa0",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Noël au château de Chambord",
+    "city": "Chambord",
+    "desc": "",
+    "startDate": "2026-11-28",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/22bc5c77-be91-39da-ac63-714abec9a90d",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Festillésime 41 - Incandescence à Mondoubleau",
+    "city": "Mondoubleau",
+    "desc": "",
+    "startDate": "2026-11-28",
+    "endDate": "2026-11-28",
+    "url": "https://data.datatourisme.fr/15/c977cd34-bb11-347f-a81e-17429065341c",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Fêtes de Noël au Château Royal de Blois",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-11-28",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/61d1f496-f7c1-3d07-9f06-fa552e4641d2",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Rêves d'antan - Noël au Domaine de Chaumont-sur-Loire",
+    "city": "Chaumont-sur-Loire",
+    "desc": "",
+    "startDate": "2026-11-28",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/10263a99-36db-3ab7-96d1-fef8d68ebc63",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Festillésime 41 - Duo Violon violoncelle à Chaon",
+    "city": "Chaon",
+    "desc": "",
+    "startDate": "2026-11-29",
+    "endDate": "2026-11-29",
+    "url": "https://data.datatourisme.fr/15/d8a454b3-72e5-3e1c-8bf8-4ee99630aed1",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Festillésime 41 - \"Le Cabaret du Poilu\" à Montrichard-Val-de-Cher",
+    "city": "Montrichard Val de Cher",
+    "desc": "",
+    "startDate": "2026-11-29",
+    "endDate": "2026-11-29",
+    "url": "https://data.datatourisme.fr/15/17e60acc-6b76-3d7e-94df-249ed0b9e76b",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Noël au château de Cheverny",
+    "city": "Cheverny",
+    "desc": "",
+    "startDate": "2026-11-29",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/cb5a2697-aabf-329b-ad96-a1ad398bc807",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Festillésime 41 - Les livres font leur cirque à Maves",
+    "city": "Maves",
+    "desc": "",
+    "startDate": "2026-11-29",
+    "endDate": "2026-11-29",
+    "url": "https://data.datatourisme.fr/15/6897eec9-8745-3e8c-9d40-86008349e0a6",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Atelier poterie-céramique à Boursay",
+    "city": "Boursay",
+    "desc": "",
+    "startDate": "2026-11-30",
+    "endDate": "2026-11-30",
+    "url": "https://data.datatourisme.fr/15/80abc417-ed4a-39ee-8767-d39a9cd71b57",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Noël aux Caves Monmousseau à Montrichard",
+    "city": "Montrichard Val de Cher",
+    "desc": "",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/7c723ff6-355b-3ef7-9152-f3a1f1aa8437",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"Le la couleur\" à Naveil",
+    "city": "Naveil",
+    "desc": "",
+    "startDate": "2026-12-02",
+    "endDate": "2026-12-02",
+    "url": "https://data.datatourisme.fr/15/66a22bb1-2c77-3f19-87d3-e2a6ffee06e2",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Sfumato ! La Joconde dévoilée",
+    "city": "Romorantin-Lanthenay",
+    "desc": "",
+    "startDate": "2026-12-02",
+    "endDate": "2026-12-02",
+    "url": "https://data.datatourisme.fr/15/7c429a41-9542-3320-bc3e-e3dfee4be6f5",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Chicago Blues Festival 2026",
+    "city": "Romorantin-Lanthenay",
+    "desc": "",
+    "startDate": "2026-12-03",
+    "endDate": "2026-12-03",
+    "url": "https://data.datatourisme.fr/15/ade20340-f0c3-36b9-8831-62dfb467e52b",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché de producteurs à Lancé",
+    "city": "Lancé",
+    "desc": "",
+    "startDate": "2026-12-04",
+    "endDate": "2026-12-04",
+    "url": "https://data.datatourisme.fr/15/c5b7a778-4a58-3097-a87f-046373dd4699",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Nuits du Donjon à Montrichard",
+    "city": "Montrichard Val de Cher",
+    "desc": "",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/09b3534b-c72e-3ff9-9c09-1fe75d1f1af5",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché de Noël à Villedieu-le-Château",
+    "city": "Villedieu-le-Château",
+    "desc": "",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "url": "https://data.datatourisme.fr/15/bf92989b-9f34-3e34-9095-1dd9429f12ad",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Balade hivernale avec l'Observatoire Loire",
+    "city": "La Chaussée-Saint-Victor",
+    "desc": "",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "url": "https://data.datatourisme.fr/15/e0256f20-c35f-33ef-a042-a52359e9d5dd",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Nuit des lumières  - Noël à Chouzy-sur-Cisse",
+    "city": "Valloire-sur-Cisse",
+    "desc": "",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-13",
+    "url": "https://data.datatourisme.fr/15/2d21d505-3a0f-3f15-b467-36ac0fc7923c",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Concerts Candlelight  au château royal de Blois",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "url": "https://data.datatourisme.fr/15/68fb2c59-9bc1-3f64-a033-1e91b4809d19",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Visite guidée \"Un dimanche au musée\" au Château Royal de Blois",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-12-06",
+    "endDate": "2026-12-06",
+    "url": "https://data.datatourisme.fr/15/a6bd3a46-b3ff-372f-aa38-3e26e6be7451",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Rencontres avec le père et la mère Noël au Château de Cheverny",
+    "city": "Cheverny",
+    "desc": "",
+    "startDate": "2026-12-06",
+    "endDate": "2026-12-06",
+    "url": "https://data.datatourisme.fr/15/2cea5efb-254b-32e5-957c-8dde72f9e03c",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"Concert pour mon tout-petit\" à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-12-11",
+    "endDate": "2026-12-11",
+    "url": "https://data.datatourisme.fr/15/274afebd-ca7f-3985-8f1f-7f38a42c9eb4",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"Les disparus de Nantes\" à Couëtron-au-Perche",
+    "city": "Couëtron-au-Perche",
+    "desc": "",
+    "startDate": "2026-12-11",
+    "endDate": "2026-12-11",
+    "url": "https://data.datatourisme.fr/15/9c28334e-7a7e-3a2c-aa57-6b78876fba5b",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"Concert pour mon tout-petit\" à Saint-Ouen",
+    "city": "Saint-Ouen",
+    "desc": "",
+    "startDate": "2026-12-11",
+    "endDate": "2026-12-11",
+    "url": "https://data.datatourisme.fr/15/6e58043e-0b96-3b13-af4a-28afa3a8e6a9",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"Concert pour mon tout-petit\" aux Roches l'Evêque",
+    "city": "Les Roches-l'Évêque",
+    "desc": "",
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-12",
+    "url": "https://data.datatourisme.fr/15/23ef4785-8c82-30f3-93b8-103c96272367",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Décembre Un Mois Une Action  Nichoir à oiseaux avec la Maison de la Loire",
+    "city": "Saint-Dyé-sur-Loire",
+    "desc": "",
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-12",
+    "url": "https://data.datatourisme.fr/15/afe89a83-62c8-346e-8242-b232ad4b4c62",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Sherlock Holmes, L'aventure muciale à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-12-13",
+    "endDate": "2026-12-13",
+    "url": "https://data.datatourisme.fr/15/fd6cb70e-4f2f-3ee7-bf29-4993f7e75461",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "8ème édition Avec ou sans fils : Soirée de présentation des spectacles avec ou sans fils 2027 à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-12-15",
+    "endDate": "2026-12-15",
+    "url": "https://data.datatourisme.fr/15/b3797e12-9df8-32ef-ade6-19115e2c5a4a",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "8ème édition Avec ou sans fils : Le serment du guéridon à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-12-15",
+    "endDate": "2026-12-15",
+    "url": "https://data.datatourisme.fr/15/5726cea8-9492-32b3-b625-3646d3bc6aad",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Concert de Noël de l'école de musique à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-12-16",
+    "endDate": "2026-12-16",
+    "url": "https://data.datatourisme.fr/15/f3b73a39-8044-3af4-899a-5d9a532fbd98",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Lecture contée à l'Observatoire Loire",
+    "city": "La Chaussée-Saint-Victor",
+    "desc": "",
+    "startDate": "2026-12-16",
+    "endDate": "2026-12-16",
+    "url": "https://data.datatourisme.fr/15/d934eb86-33ff-363f-a119-6e5fe992fa1f",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Les Bodin's & friends à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-12-17",
+    "endDate": "2026-12-17",
+    "url": "https://data.datatourisme.fr/15/6d7ff160-3880-31df-b760-3be3bad9340f",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Contes et histoires",
+    "city": "Le Controis-en-Sologne",
+    "desc": "",
+    "startDate": "2026-12-18",
+    "endDate": "2027-01-03",
+    "url": "https://data.datatourisme.fr/15/7bc702c0-006d-3941-acb3-5bfd10c81e39",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Exposition temporaire \"Les maîtres de l’évasion\" à la Maison de la Magie",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-12-19",
+    "endDate": "2027-01-03",
+    "url": "https://data.datatourisme.fr/15/04269638-b7cf-3d6f-89a4-a954d27eeb14",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Visites guidées de la Commanderie Templière d'Arville",
+    "city": "Couëtron-au-Perche",
+    "desc": "",
+    "startDate": "2026-12-19",
+    "endDate": "2027-01-03",
+    "url": "https://data.datatourisme.fr/15/b7e0119e-001d-3f2d-a2b8-9b67e388cc3a",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Noël à la Commanderie d'Arville",
+    "city": "Couëtron-au-Perche",
+    "desc": "",
+    "startDate": "2026-12-19",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/5124e161-e22a-3968-a73b-8292f8dbd5be",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Noël s'invite à la magnanerie de Bourré",
+    "city": "Montrichard Val de Cher",
+    "desc": "",
+    "startDate": "2026-12-20",
+    "endDate": "2026-12-24",
+    "url": "https://data.datatourisme.fr/15/ae06ccaf-51a7-3c19-8c58-ede65e54bf3d",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "\"Murmures nocturnes\" - Visite guidée au château royal de Blois",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-12-21",
+    "endDate": "2026-12-21",
+    "url": "https://data.datatourisme.fr/15/5014785e-0390-37cf-b009-d05fa52d0a5c",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Le Secret de Paul - Escape Game sur la Loire",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-12-21",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/163fe128-3853-34b7-9366-2823166dcedb",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Atelier famille – «Écusson en laine feutrée»",
+    "city": "Couëtron-au-Perche",
+    "desc": "",
+    "startDate": "2026-12-22",
+    "endDate": "2026-12-22",
+    "url": "https://data.datatourisme.fr/15/8abb9a73-8f31-35f7-9b37-ad09736f09e9",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "ESSAI SALBRIS",
+    "city": "Salbris",
+    "desc": "",
+    "startDate": "2026-12-26",
+    "endDate": "2026-12-26",
+    "url": "https://data.datatourisme.fr/15/dd5c8ca4-e673-3ccc-9504-97c63dc26192",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Visite aux flambeaux à la Commanderie templière d'Arville",
+    "city": "Couëtron-au-Perche",
+    "desc": "",
+    "startDate": "2026-12-28",
+    "endDate": "2026-12-30",
+    "url": "https://data.datatourisme.fr/15/7d386545-f9d8-3c2a-8fe5-a56621759ace",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Atelier famille – «Couronne des rois»",
+    "city": "Couëtron-au-Perche",
+    "desc": "",
+    "startDate": "2026-12-29",
+    "endDate": "2026-12-29",
+    "url": "https://data.datatourisme.fr/15/98909a1a-47ee-3e04-b842-7d05eb2db052",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Opération 2 fois plus de goût",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2027-01-15",
+    "endDate": "2027-03-31",
+    "url": "https://data.datatourisme.fr/15/8d8880ae-1d53-3f29-b242-6f48166e4408",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"Leonor chante Barbara\" à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2027-01-16",
+    "endDate": "2027-01-16",
+    "url": "https://data.datatourisme.fr/15/d1f33805-93b8-3a7d-aef8-090a6a2e639f",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Naturellement joueurs !",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2027-01-21",
+    "endDate": "2027-01-21",
+    "url": "https://data.datatourisme.fr/15/1c1ea954-d982-3a47-bc3d-0608517fc733",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Le Siffleur",
+    "city": "Romorantin-Lanthenay",
+    "desc": "",
+    "startDate": "2027-01-28",
+    "endDate": "2027-01-28",
+    "url": "https://data.datatourisme.fr/15/b4be558c-f965-332d-8df4-ed8a363a29be",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Jérôme Commandeur",
+    "city": "Romorantin-Lanthenay",
+    "desc": "",
+    "startDate": "2027-02-17",
+    "endDate": "2027-02-17",
+    "url": "https://data.datatourisme.fr/15/9a1f8183-3460-304b-8f61-da2873365434",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Instants Nature - A tire d'aile à la réserve de Malzoné",
+    "city": "Millançay",
+    "desc": "",
+    "startDate": "2027-02-25",
+    "endDate": "2027-02-25",
+    "url": "https://data.datatourisme.fr/15/aa4b3eca-9808-3da0-9a62-f651cb60327c",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "A tire d’aile à l’étang de Malzoné",
+    "city": "Millançay",
+    "desc": "",
+    "startDate": "2027-02-25",
+    "endDate": "2027-02-25",
+    "url": "https://data.datatourisme.fr/15/da2e74a0-03e2-3533-81d2-83de51318bb0",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"Et n'oubliez pas la pièce\" à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2027-03-11",
+    "endDate": "2027-03-11",
+    "url": "https://data.datatourisme.fr/15/d11c19a0-c27d-3ffe-8d4a-cfbaa4f2773a",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "American Gospel by Gospel pour 100 Voix",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2027-03-13",
+    "endDate": "2027-03-13",
+    "url": "https://data.datatourisme.fr/15/c8a88896-7204-37a7-8ecb-31d2404ab867",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Fête des plantes au château de Cheverny",
+    "city": "Cheverny",
+    "desc": "",
+    "startDate": "2027-03-13",
+    "endDate": "2027-03-14",
+    "url": "https://data.datatourisme.fr/15/06eeb80b-ff65-33e1-acec-89ef1917fb6e",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Bénabar",
+    "city": "Romorantin-Lanthenay",
+    "desc": "",
+    "startDate": "2027-03-18",
+    "endDate": "2027-03-18",
+    "url": "https://data.datatourisme.fr/15/6a14446b-2bb8-324c-9a41-d5e629590d11",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"Veronica Swift\" à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2027-03-19",
+    "endDate": "2027-03-19",
+    "url": "https://data.datatourisme.fr/15/498afd93-bd95-3c71-8763-02c59965eebd",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Jardins des Tulipes du château de Cheverny",
+    "city": "Cheverny",
+    "desc": "",
+    "startDate": "2027-03-20",
+    "endDate": "2027-03-31",
+    "url": "https://data.datatourisme.fr/15/9e28c286-b3b0-30bd-a67a-eb53d47c75e0",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Mille et une couleurs de Pâques à la Commanderie d'Arville",
+    "city": "Couëtron-au-Perche",
+    "desc": "",
+    "startDate": "2027-03-27",
+    "endDate": "2027-03-29",
+    "url": "https://data.datatourisme.fr/15/3881b0e2-96ba-3de1-a7be-9ed5cd6c0544",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Spectacle Son et Lumière \"Ainsi Blois vous est conté\"",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2027-03-27",
+    "endDate": "2027-03-29",
+    "url": "https://data.datatourisme.fr/15/770f1fd9-c66e-3981-9e0c-65820ec830c1",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Visite guidée Chambord au fil du village et des jardins",
+    "city": "Chambord",
+    "desc": "",
+    "startDate": "2027-03-28",
+    "endDate": "2027-10-31",
+    "url": "https://data.datatourisme.fr/15/3d4efc3d-72a1-3af7-9333-ac936aea433c",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Décorations pour Pâques au Château de Cheverny",
+    "city": "Cheverny",
+    "desc": "",
+    "startDate": "2027-04-01",
+    "endDate": "2027-05-09",
+    "url": "https://data.datatourisme.fr/15/2479df92-2843-3ac5-b716-7f36b0beb256",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Exposition à la Maison des Etangs",
+    "city": "Saint-Viâtre",
+    "desc": "",
+    "startDate": "2027-04-01",
+    "endDate": "2027-09-30",
+    "url": "https://data.datatourisme.fr/15/786c438b-5b05-311b-bcf6-29c5ea2392bd",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Stacey Kent",
+    "city": "Romorantin-Lanthenay",
+    "desc": "",
+    "startDate": "2027-04-02",
+    "endDate": "2027-04-02",
+    "url": "https://data.datatourisme.fr/15/8a68ef2a-6fac-3ec9-a020-4fed3960bb1d",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marathon de Cheverny",
+    "city": "Cheverny",
+    "desc": "",
+    "startDate": "2027-04-03",
+    "endDate": "2027-04-04",
+    "url": "https://data.datatourisme.fr/15/3219deb2-1ed6-3bed-a4fa-d733a5d925e6",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Spectacle équestre « Rencontre entre l’homme et le cheval »",
+    "city": "Cheverny",
+    "desc": "",
+    "startDate": "2027-04-04",
+    "endDate": "2027-06-30",
+    "url": "https://data.datatourisme.fr/15/c9ce98b0-275e-3a02-b07a-83c7ba393fba",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Orchestre Symphonique Région Centre - Tours",
+    "city": "Romorantin-Lanthenay",
+    "desc": "",
+    "startDate": "2027-04-09",
+    "endDate": "2027-04-09",
+    "url": "https://data.datatourisme.fr/15/70fadf78-8ddf-3f18-b6dc-cb491bb8b681",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Festival International des Jardins",
+    "city": "Chaumont-sur-Loire",
+    "desc": "",
+    "startDate": "2027-04-23",
+    "endDate": "2027-06-30",
+    "url": "https://data.datatourisme.fr/15/f4d24315-59bc-3b74-b5e0-e40c0472efd7",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "L'Hectare \"Faux faire faux voir\" à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2027-05-04",
+    "endDate": "2027-05-04",
+    "url": "https://data.datatourisme.fr/15/6fd67d78-e520-3b63-8521-40594d35b8d9",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché aux plantes et produits du terroir",
+    "city": "Sasnières",
+    "desc": "",
+    "startDate": "2027-05-15",
+    "endDate": "2027-05-16",
+    "url": "https://data.datatourisme.fr/15/440d7fcd-cf1a-38be-aaab-040ae0f0dc1b",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Rendez-vous aux jardins du Plessis Sasnières",
+    "city": "Sasnières",
+    "desc": "",
+    "startDate": "2027-06-05",
+    "endDate": "2027-06-06",
+    "url": "https://data.datatourisme.fr/15/d0d86dde-19a9-34ff-a17e-c74ae611c0b8",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Game Fair en Loir-et-Cher - salon de la chasse",
+    "city": "Lamotte-Beuvron",
+    "desc": "",
+    "startDate": "2027-06-11",
+    "endDate": "2027-06-13",
+    "url": "https://data.datatourisme.fr/15/d4f3604f-1273-38df-a24b-b266a47e9c94",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Fête de la Musique à la Commanderie d'Arville",
+    "city": "Couëtron-au-Perche",
+    "desc": "",
+    "startDate": "2027-06-21",
+    "endDate": "2027-06-21",
+    "url": "https://data.datatourisme.fr/15/cb8a5911-8435-3cb1-9cfa-360dfe720aa6",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Spectacle-visite guidée \"les héritiers de pontlevoy\"",
+    "city": "Pontlevoy",
+    "desc": "",
+    "startDate": "2027-07-09",
+    "endDate": "2027-07-11",
+    "url": "https://data.datatourisme.fr/15/64349b62-95e9-305d-8b77-4b7a8d6e539c",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Les médiévales d'Arville",
+    "city": "Couëtron-au-Perche",
+    "desc": "",
+    "startDate": "2027-07-09",
+    "endDate": "2027-07-11",
+    "url": "https://data.datatourisme.fr/15/25c3d979-cfae-3ab9-b8b7-b4142514e101",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Échappées à vélo",
+    "city": "Cheverny",
+    "desc": "",
+    "startDate": "2027-10-10",
+    "endDate": "2027-10-10",
+    "url": "https://data.datatourisme.fr/15/be37c8e1-520d-3933-a226-b32b0e20d009",
+    "category": "Événement",
+    "season": ""
+  }
+]
