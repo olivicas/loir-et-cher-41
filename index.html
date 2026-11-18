@@ -341,7 +341,8 @@ function renderPlaces(filter='all'){const data=filter==='all'?places:places.filt
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderPlaces(b.dataset.filter)}));
 
 function renderEvents() {
-const list = events
+const f = document.querySelector('#seasonFilter').value;
+ const list = events
     .filter(e => f === 'all' || e.season === f)
     .sort((a, b) => {
         const dateA = a.startDate ? new Date(a.startDate) : null;
