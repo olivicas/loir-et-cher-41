@@ -68,7 +68,7 @@ def main():
         "Accept": "application/json"
     }
 
-        params = {
+    params = {
         "lang": "fr",
         "page": 1,
         "page_size": 100,
