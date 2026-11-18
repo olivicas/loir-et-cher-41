@@ -23,7 +23,7 @@ def first_text(value):
             if result:
                 return result
     if isinstance(value, dict):
-        for key in ("fr", "value", "label", "text"):
+        for key in ("@fr", "fr", "value", "label", "text"):
             if key in value:
                 result = first_text(value[key])
                 if result:
