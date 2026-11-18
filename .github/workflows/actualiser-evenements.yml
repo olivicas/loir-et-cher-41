@@ -27,7 +27,7 @@ jobs:
       - name: Recuperer les evenements
         env:
           DATATOURISME_API_KEY: ${{ secrets.DATATOURISME_API_KEY }}
-        run: python scripts/update_events.py
+         run: python scripts/actualiser_evenements.py
 
       - name: Enregistrer les modifications
         run: |
