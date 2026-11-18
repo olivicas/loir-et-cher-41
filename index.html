@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head>function estUnMarche(evenement)
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#173f32">function renderEvents()
@@ -370,12 +370,16 @@ function estCeWeekend(evenement) {
 
     return evenement.startDate <= formatDate(dimanche) &&
            evenement.endDate >= formatDate(samedi);
-}
-function estUnMarche(evenement) {
-    const titre = (evenement.title || '').toLowerCase();
 
-    return /\bmarch[eé]s?\b/i.test(titre);
+function estUnMarche(evenement) {
+    const texte = [
+        evenement.title,
+        evenement.category
+    ].filter(Boolean).join(' ').toLowerCase();
+
+    return /march[eé]|market/i.test(texte);
 }
+
 function renderEvents() {
        const f = document.querySelector('#seasonFilter').value;
        const list = events
