@@ -67,7 +67,7 @@ def main():
         "X-API-Key": API_KEY,
         "Accept": "application/json"
     }
-
+    
     params = {
         "lang": "fr",
         "page": 1,
