@@ -75,7 +75,7 @@ def main():
         "fields": "uuid,uri,label,isLocatedAt.address,hasDescription,takesPlaceAt",
         "filters": "isLocatedAt.address.hasAddressCity.isPartOfDepartment.insee[eq]=41"
     }
-    }
+    
 
     events = []
     url = API_URL
