@@ -86,7 +86,18 @@ def main():
             timeout=60
         )
         response.raise_for_status()
+       
+
         payload = response.json()
+
+        print("DIAGNOSTIC - Type de réponse :", type(payload).__name__)
+        if isinstance(payload, dict):
+            print("DIAGNOSTIC - Clés disponibles :", list(payload.keys()))
+            print("DIAGNOSTIC - Nombre d'objets :", len(payload.get("objects", [])))
+        elif isinstance(payload, list):
+            print("DIAGNOSTIC - Nombre d'éléments :", len(payload))
+
+       
 
         for item in payload.get("objects", []):
             title = first_text(item.get("label"))
