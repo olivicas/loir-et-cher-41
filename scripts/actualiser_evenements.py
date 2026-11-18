@@ -89,10 +89,10 @@ def main():
         payload = response.json()
 
         for item in payload.get("objects", []):
-        title = first_text(item.get("label"))
-        start, end = get_date(item)
+            title = first_text(item.get("label"))
+            start, end = get_date(item)
 
-        if not title or not start:
+            if not title or not start:
                 continue
 
         try:
@@ -101,7 +101,7 @@ def main():
             if not end and start < date.today().isoformat():
                     continue
         except ValueError:
-                continue
+            continue
 
         description = first_text(item.get("hasDescription"))
         city = find_value(item.get("isLocatedAt", {}), [
@@ -119,10 +119,9 @@ def main():
                 "season": "",
             })
 
-       next_page = payload.get("meta", {}).get("next")
-       url = urljoin("https://api.datatourisme.fr", next_page) if next_page else None
-
-       params = None
+        next_page = payload.get("meta", {}).get("next")
+        url = urljoin("https://api.datatourisme.fr", next_page) if next_page else None
+        params = None
 
     events.sort(key=lambda event: event["startDate"])
 
