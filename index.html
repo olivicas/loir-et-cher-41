@@ -405,7 +405,18 @@ async function chargerEvenementsAutomatiques() {
             if (!existants.has(cle)) {
                 events.push({
                     ...evenement,
-                    season: evenement.season || '',
+                    
+season: evenement.season || (() => {
+    if (!evenement.startDate) return '';
+
+    const mois = Number(evenement.startDate.slice(5, 7));
+
+    if ([12, 1, 2].includes(mois)) return 'Hiver';
+    if ([3, 4, 5].includes(mois)) return 'Printemps';
+    if ([6, 7, 8].includes(mois)) return 'Été';
+    return 'Automne';
+})(),
+
                     
 
 period: evenement.startDate && evenement.endDate
