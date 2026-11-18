@@ -88,7 +88,7 @@ def main():
         response.raise_for_status()
         payload = response.json()
 
-    for item in payload.get("objects", []):
+        for item in payload.get("objects", []):
         title = first_text(item.get("label"))
         start, end = get_date(item)
 
