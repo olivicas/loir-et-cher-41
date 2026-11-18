@@ -152,7 +152,7 @@ def main():
                 "category": "Événement",
                 "season": "",
          })
-
+            print("EVENEMENT AJOUTE :", title)
         next_page = payload.get("meta", {}).get("next")
         url = urljoin("https://api.datatourisme.fr", next_page) if next_page else None
         params = None
