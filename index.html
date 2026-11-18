@@ -377,17 +377,17 @@ function estUnMarche(evenement) {
     return /\bmarch[eé]s?\b/i.test(titre);
 }
 function renderEvents() {
-const f = document.querySelector('#seasonFilter').value;
+       const f = document.querySelector('#seasonFilter').value;
        const list = events
-    .filter(e => !estUnMarche(e))
+          .filter(e => !estUnMarche(e))
        
-    .filter(e =>
-        f === 'all' ||
-        (f === 'weekend' && estCeWeekend(e)) ||
-        e.season === f
+          .filter(e =>
+         f === 'all' ||
+         (f === 'weekend' && estCeWeekend(e)) ||
+         e.season === f
     )
 
-       .sort((a, b) => {
+         .sort((a, b) => {
         const dateA = a.startDate ? new Date(a.startDate) : null;
         const dateB = b.startDate ? new Date(b.startDate) : null;
 
