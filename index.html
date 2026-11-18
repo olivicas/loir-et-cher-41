@@ -503,7 +503,79 @@ document.querySelector('#menuBtn').addEventListener('click',()=>{const n=documen
 document.querySelector('#year').textContent=new Date().getFullYear();renderPlaces();renderEvents();renderCommunes();
 
 // Carte interactive : points éditorialisés et coordonnées de repérage à l'échelle des communes.
-const mapPoints = [
+const mapPoints = [{
+  name: "Château de Talcy",
+  city: "Talcy",
+  type: "tourisme",
+  lat: 47.768,
+  lng: 1.443,
+  desc: "Château Renaissance, jardins et patrimoine historique. Position indicative.",
+  url: "https://www.google.com/maps/search/?api=1&query=Chateau+de+Talcy"
+},{
+  name: "Château de Fougères-sur-Bièvre",
+  city: "Fougères-sur-Bièvre",
+  type: "tourisme",
+  lat: 47.447,
+  lng: 1.343,
+  desc: "Château fort médiéval du XVe siècle, avec tours, courtines et architecture défensive remarquable.",
+  url: "https://www.google.com/maps/search/?api=1&query=Chateau+de+Fougeres-sur-Bievre"
+},{
+  name: "Château de Fougères-sur-Bièvre",
+  city: "Fougères-sur-Bièvre",
+  type: "tourisme",
+  lat: 47.447,
+  lng: 1.343,
+  desc: "Château fort médiéval du XVe siècle, avec tours, courtines et architecture défensive remarquable.",
+  url: "https://www.google.com/maps/search/?api=1&query=Chateau+de+Fougeres-sur-Bievre"
+},{
+  name: "Château de Beauregard",
+  city: "Cellettes",
+  type: "tourisme",
+  lat: 47.525,
+  lng: 1.383,
+  desc: "Château Renaissance célèbre pour sa galerie de 327 portraits historiques, son parc paysager et ses jardins.",
+  url: "https://www.google.com/maps/search/?api=1&query=Chateau+de+Beauregard+Cellettes"
+},{
+  name: "Château de Villesavin",
+  city: "Tour-en-Sologne",
+  type: "tourisme",
+  lat: 47.537,
+  lng: 1.497,
+  desc: "Château Renaissance du XVIe siècle, surnommé la petite cabane de chantier de Chambord. Il abrite notamment un musée du mariage.",
+  url: "https://www.google.com/maps/search/?api=1&query=Chateau+de+Villesavin"
+},{
+  name: "Commanderie templière d'Arville",
+  city: "Couëtron-au-Perche",
+  type: "tourisme",
+  lat: 48.063,
+  lng: 0.947,
+  desc: "Ancienne commanderie des Templiers, avec bâtiments médiévaux, église et musée consacré à l'histoire de l'ordre du Temple.",
+  url: "https://www.google.com/maps/search/?api=1&query=Commanderie+templiere+Arville"
+},{
+  name: "Château féodal de Fréteval",
+  city: "Fréteval",
+  type: "tourisme",
+  lat: 47.892,
+  lng: 1.210,
+  desc: "Vestiges d'un château médiéval avec un remarquable donjon du XIe siècle, dominant la vallée du Loir.",
+  url: "https://www.google.com/maps/search/?api=1&query=Chateau+feodal+de+Freteval"
+},{
+  name: "Jardin du Plessis Sasnières",
+  city: "Sasnières",
+  type: "tourisme",
+  lat: 47.717,
+  lng: 0.933,
+  desc: "Jardin remarquable situé dans un vallon, avec étang, roseraie, collections de plantes et promenades paysagères.",
+  url: "https://www.google.com/maps/search/?api=1&query=Jardin+du+Plessis+Sasnieres"
+},{
+  name: "Chapelle Saint-Gilles",
+  city: "Montoire-sur-le-Loir",
+  type: "tourisme",
+  lat: 47.754,
+  lng: 0.866,
+  desc: "Chapelle romane réputée pour ses remarquables peintures murales médiévales.",
+  url: "https://www.google.com/maps/search/?api=1&query=Chapelle+Saint-Gilles+Montoire-sur-le-Loir"
+},
  {name:"Château de Chambord",city:"Chambord",type:"tourisme",lat:47.6162,lng:1.5172,desc:"Le grand château Renaissance au cœur du domaine forestier.",url:"https://www.chambord.org/"},
  {name:"Château royal de Blois",city:"Blois",type:"tourisme",lat:47.5861,lng:1.3330,desc:"Un panorama de l’architecture et de l’histoire de France.",url:"https://www.chateaudeblois.fr/"},
  {name:"Château de Cheverny",city:"Cheverny",type:"tourisme",lat:47.5007,lng:1.4582,desc:"Château habité, jardins et univers de Tintin.",url:"https://www.chateau-cheverny.fr/"},
