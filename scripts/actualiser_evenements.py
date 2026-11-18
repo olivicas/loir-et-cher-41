@@ -103,12 +103,12 @@ def main():
         except ValueError:
             continue
 
-        description = first_text(item.get("hasDescription"))
-        city = find_value(item.get("isLocatedAt", {}), [
+            description = first_text(item.get("hasDescription"))
+            city = find_value(item.get("isLocatedAt", {}), [
                 "addressLocality", "name"
          ])
 
-         events.append({
+            events.append({
                 "title": title,
                 "city": city or "Loir-et-Cher",
                 "desc": description,
