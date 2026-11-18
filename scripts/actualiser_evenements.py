@@ -88,25 +88,25 @@ def main():
         response.raise_for_status()
         payload = response.json()
 
-        for item in payload.get("objects", []):
-            title = first_text(item.get("label"))
-            start, end = get_date(item)
+    for item in payload.get("objects", []):
+        title = first_text(item.get("label"))
+        start, end = get_date(item)
 
-            if not title or not start:
+        if not title or not start:
                 continue
 
-            try:
-                if end and end < date.today().isoformat():
+        try:
+            if end and end < date.today().isoformat():
                     continue
-                if not end and start < date.today().isoformat():
+            if not end and start < date.today().isoformat():
                     continue
-            except ValueError:
+        except ValueError:
                 continue
 
-            description = first_text(item.get("hasDescription"))
-            city = find_value(item.get("isLocatedAt", {}), [
+        description = first_text(item.get("hasDescription"))
+        city = find_value(item.get("isLocatedAt", {}), [
                 "addressLocality", "name"
-            ])
+         ])
 
             events.append({
                 "title": title,
