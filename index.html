@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#173f32">
+<meta name="theme-color" content="#173f32">function renderEvents()
 <title>Loir-et-Cher 41 | Le guide pour découvrir le département</title>
 <meta name="description" content="Explorez le Loir-et-Cher : châteaux, villages, nature, gastronomie, producteurs, marchés, randonnées et idées de sorties.">
 <meta property="og:title" content="Loir-et-Cher 41 — Le guide pour découvrir le département">
@@ -342,9 +342,9 @@ document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click'
 
 function renderEvents() {
 const f = document.querySelector('#seasonFilter').value;
- const list = events
-    .filter(e => f === 'all' || e.season === f)
-    .sort((a, b) => {
+       const list = events
+       .filter(e => f === 'all' || e.season === f)
+       .sort((a, b) => {
         const dateA = a.startDate ? new Date(a.startDate) : null;
         const dateB = b.startDate ? new Date(b.startDate) : null;
 
