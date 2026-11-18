@@ -77,14 +77,7 @@ select option {
  </div>
 </section>
 
-<section class="max-w-7xl mx-auto px-4 -mt-7 relative z-10">
- <div class="bg-white rounded-2xl shadow-xl p-4 md:p-5 border border-stone-200">
-  <label for="globalSearch" class="font-bold text-sm block mb-2">Que souhaitez-vous découvrir dans le Loir-et-Cher ?</label>
-  <div class="flex flex-col sm:flex-row gap-2"><input id="globalSearch" class="flex-1 rounded-xl bg-stone-50 border border-stone-300 px-4 py-3" placeholder="Ex. château, randonnée, Vendôme, marché…" autocomplete="off"><button id="searchBtn" class="btn-primary rounded-xl px-6 py-3 font-bold">Rechercher</button></div>
-  <p class="text-xs text-stone-500 mt-2">Recherche dans les lieux, les communes et les idées de sorties présentés sur le site.</p>
-  <div id="searchResults" class="hidden mt-3 border-t pt-3 text-sm" aria-live="polite"></div>
- </div>
-</section>
+
 
 <section id="decouvrir" class="max-w-7xl mx-auto px-4 py-20">
  <div class="max-w-2xl mb-10"><p class="text-xs font-bold uppercase tracking-[.2em] text-amber-700">Un département, quatre ambiances</p><h2 class="text-3xl md:text-4xl mt-2" style="color:var(--forest)">Choisissez votre territoire</h2><p class="text-stone-600 mt-3">Du patrimoine royal aux chemins de campagne, chaque partie du département possède son caractère.</p></div>
@@ -744,8 +737,6 @@ chargerEvenementsAutomatiques();
 
 function renderCommunes(q=''){const list=communes.filter(c=>(c.name+' '+c.cp+' '+c.role).toLowerCase().includes(q.toLowerCase()));document.querySelector('#communeList').innerHTML=list.map(c=>`<article class="rounded-xl border border-stone-200 p-4 bg-stone-50"><h3 class="text-lg font-bold">${esc(c.name)} <span class="text-xs font-sans text-stone-500">${esc(c.cp)}</span></h3><p class="text-xs text-stone-600 mt-1">${esc(c.role)}</p><div class="flex gap-4 mt-3 text-sm font-bold"><a class="text-emerald-800 underline" href="${c.mairie}" target="_blank" rel="noopener noreferrer">Mairie ↗</a><a class="text-emerald-800 underline" href="${c.tourisme}" target="_blank" rel="noopener noreferrer">Tourisme ↗</a><a class="text-emerald-800 underline" href="https://www.openstreetmap.org/search?query=${encodeURIComponent(c.name+' Loir-et-Cher')}" target="_blank" rel="noopener noreferrer">Carte ↗</a></div></article>`).join('')||'<p class="text-sm text-stone-500">Aucune commune trouvée dans cette première sélection.</p>'}
 document.querySelector('#communeSearch').addEventListener('input',e=>renderCommunes(e.target.value));
-function doSearch(){const q=document.querySelector('#globalSearch').value.trim().toLowerCase(),box=document.querySelector('#searchResults');if(!q){box.classList.remove('hidden');box.textContent='Saisissez un lieu, une commune ou une activité.';return}const found=[...places.filter(p=>(p.name+' '+p.city+' '+p.desc+' '+p.label).toLowerCase().includes(q)).map(p=>({name:p.name,where:p.city,href:'#incontournables'})),...communes.filter(c=>(c.name+' '+c.cp).toLowerCase().includes(q)).map(c=>({name:c.name,where:'Commune · '+c.cp,href:'#annuaire'})),...events.filter(e=>(e.title+' '+e.city+' '+e.desc).toLowerCase().includes(q)).map(e=>({name:e.title,where:e.city,href:'#agenda'}))];box.classList.remove('hidden');box.innerHTML=found.length?'<b>Résultats :</b><ul class="mt-2 space-y-2">'+found.map(x=>`<li><a class="text-emerald-800 underline font-semibold" href="${x.href}">${esc(x.name)}</a> <span class="text-stone-500">— ${esc(x.where)}</span></li>`).join('')+'</ul>':'Aucun résultat dans le contenu actuellement publié. Essayez un autre terme.'}
-document.querySelector('#searchBtn').addEventListener('click',doSearch);document.querySelector('#globalSearch').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch()});
 document.querySelector('#menuBtn').addEventListener('click',()=>{const n=document.querySelector('#mobileNav'),b=document.querySelector('#menuBtn'),open=n.classList.toggle('hidden')===false;b.setAttribute('aria-expanded',String(open))});document.querySelectorAll('#mobileNav a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('#mobileNav').classList.add('hidden');document.querySelector('#menuBtn').setAttribute('aria-expanded','false')}));
 document.querySelector('#year').textContent=new Date().getFullYear();renderPlaces();renderEvents();renderCommunes();
 
