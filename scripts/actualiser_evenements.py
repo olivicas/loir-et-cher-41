@@ -68,11 +68,13 @@ def main():
         "Accept": "application/json"
     }
 
-    params = {
+        params = {
         "lang": "fr",
         "page": 1,
         "page_size": 100,
+        "fields": "uuid,uri,label,isLocatedAt.address,hasDescription,takesPlaceAt",
         "filters": "isLocatedAt.address.hasAddressCity.isPartOfDepartment.insee[eq]=41"
+    }
     }
 
     events = []
