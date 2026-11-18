@@ -76,10 +76,8 @@ def main():
         "filters": "isLocatedAt.address.hasAddressCity.isPartOfDepartment.insee[eq]=41"
     }
     
-
     events = []
     url = API_URL
-
     while url:
         response = requests.get(
             url,
