@@ -119,10 +119,10 @@ def main():
                 "season": "",
             })
 
-        next_page = payload.get("meta", {}).get("next")
-        url = urljoin("https://api.datatourisme.fr", next_page) if next_page else None
+    next_page = payload.get("meta", {}).get("next")
+    url = urljoin("https://api.datatourisme.fr", next_page) if next_page else None
 
-        params = None
+    params = None
 
     events.sort(key=lambda event: event["startDate"])
 
