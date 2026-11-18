@@ -339,7 +339,37 @@ const communes=[
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function renderPlaces(filter='all'){const data=filter==='all'?places:places.filter(p=>p.type===filter);document.querySelector('#placesGrid').innerHTML=data.map(p=>`<article class="card flex flex-col"><img loading="lazy" class="h-52 w-full object-cover" src="${p.img}" alt="${esc(p.name)}"><div class="p-5 flex-1 flex flex-col"><span class="text-xs uppercase tracking-wider font-bold text-amber-700">${esc(p.label)} · ${esc(p.city)}</span><h3 class="text-xl font-bold mt-2">${esc(p.name)}</h3><p class="text-sm text-stone-600 mt-2 flex-1">${esc(p.desc)}</p><div class="flex flex-wrap gap-2 mt-5"><a class="btn-primary rounded-lg px-4 py-2 text-sm font-bold" href="${p.url}" target="_blank" rel="noopener noreferrer">Site officiel ↗</a><a class="rounded-lg px-4 py-2 text-sm font-bold border border-stone-300" href="https://www.openstreetmap.org/search?query=${encodeURIComponent(p.map)}" target="_blank" rel="noopener noreferrer">Carte ↗</a></div></div></article>`).join('')}
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderPlaces(b.dataset.filter)}));
-function renderEvents(){const f=document.querySelector('#seasonFilter').value;const list=events.filter(e=>f==='all'||e.season===f);document.querySelector('#eventsGrid').innerHTML=list.map(e=>`<article class="rounded-2xl border border-white/15 bg-white/10 p-6"><span class="text-xs font-bold text-amber-300 uppercase">${esc(e.season)} · ${esc(e.period)}</span><h3 class="text-xl font-bold mt-3">${esc(e.title)}</h3><p class="text-xs text-stone-300 mt-1">${esc(e.city)}</p><p class="text-sm text-stone-100 mt-3">${esc(e.desc)}</p></article>`).join('')||'<p>Aucun rendez-vous pour ce filtre.</p>'}
+
+function renderEvents() {
+    const f = document.querySelector('#seasonFilter').value;
+    const list = events.filter(e => f === 'all' || e.season === f);
+
+    document.querySelector('#eventsGrid').innerHTML = list.map(e => `
+        <article class="rounded-2xl border border-white/15 bg-white/10 p-6">
+            <span class="text-xs font-bold text-amber-300 uppercase">
+                ${esc(e.season || 'Agenda')} · ${esc(e.period || 'Dates à confirmer')}
+            </span>
+
+            <h3 class="text-xl font-bold mt-3">${esc(e.title)}</h3>
+
+            <p class="text-xs text-stone-300 mt-1">${esc(e.city)}</p>
+
+            ${e.desc ? `
+                <p class="text-sm text-stone-100 mt-3">${esc(e.desc)}</p>
+            ` : ''}
+
+            ${e.url && /^https?:\/\//i.test(e.url) ? `
+                <a href="${esc(e.url)}"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-block mt-4 text-amber-300 font-semibold hover:underline">
+                    Voir les détails →
+                </a>
+            ` : ''}
+        </article>
+    `).join('') || '<p>Aucun rendez-vous pour ce filtre.</p>';
+}
+
 document.querySelector('#seasonFilter').addEventListener('change',renderEvents);
 async function chargerEvenementsAutomatiques() {
     try {
