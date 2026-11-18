@@ -341,6 +341,49 @@ function renderPlaces(filter='all'){const data=filter==='all'?places:places.filt
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderPlaces(b.dataset.filter)}));
 function renderEvents(){const f=document.querySelector('#seasonFilter').value;const list=events.filter(e=>f==='all'||e.season===f);document.querySelector('#eventsGrid').innerHTML=list.map(e=>`<article class="rounded-2xl border border-white/15 bg-white/10 p-6"><span class="text-xs font-bold text-amber-300 uppercase">${esc(e.season)} · ${esc(e.period)}</span><h3 class="text-xl font-bold mt-3">${esc(e.title)}</h3><p class="text-xs text-stone-300 mt-1">${esc(e.city)}</p><p class="text-sm text-stone-100 mt-3">${esc(e.desc)}</p></article>`).join('')||'<p>Aucun rendez-vous pour ce filtre.</p>'}
 document.querySelector('#seasonFilter').addEventListener('change',renderEvents);
+async function chargerEvenementsAutomatiques() {
+    try {
+        const response = await fetch('./events.json', { cache: 'no-store' });
+
+        if (!response.ok) {
+            throw new Error('Impossible de charger events.json');
+        }
+
+        const nouveaux = await response.json();
+
+        if (!Array.isArray(nouveaux)) {
+            throw new Error('Format des événements invalide');
+        }
+
+        const existants = new Set(
+            events.map(e => `${e.title}|${e.city}`)
+        );
+
+        for (const evenement of nouveaux) {
+            const cle = `${evenement.title}|${evenement.city}`;
+
+            if (!existants.has(cle)) {
+                events.push({
+                    ...evenement,
+                    season: evenement.season || '',
+                    period: evenement.startDate
+                        ? new Date(evenement.startDate + 'T12:00:00')
+                            .toLocaleDateString('fr-FR')
+                        : 'Date à confirmer'
+                });
+                existants.add(cle);
+            }
+        }
+
+        renderEvents();
+        console.log(`${nouveaux.length} événements automatiques chargés`);
+    } catch (erreur) {
+        console.error('Erreur de chargement des événements :', erreur);
+    }
+}
+
+chargerEvenementsAutomatiques();
+
 function renderCommunes(q=''){const list=communes.filter(c=>(c.name+' '+c.cp+' '+c.role).toLowerCase().includes(q.toLowerCase()));document.querySelector('#communeList').innerHTML=list.map(c=>`<article class="rounded-xl border border-stone-200 p-4 bg-stone-50"><h3 class="text-lg font-bold">${esc(c.name)} <span class="text-xs font-sans text-stone-500">${esc(c.cp)}</span></h3><p class="text-xs text-stone-600 mt-1">${esc(c.role)}</p><div class="flex gap-4 mt-3 text-sm font-bold"><a class="text-emerald-800 underline" href="${c.mairie}" target="_blank" rel="noopener noreferrer">Mairie ↗</a><a class="text-emerald-800 underline" href="${c.tourisme}" target="_blank" rel="noopener noreferrer">Tourisme ↗</a><a class="text-emerald-800 underline" href="https://www.openstreetmap.org/search?query=${encodeURIComponent(c.name+' Loir-et-Cher')}" target="_blank" rel="noopener noreferrer">Carte ↗</a></div></article>`).join('')||'<p class="text-sm text-stone-500">Aucune commune trouvée dans cette première sélection.</p>'}
 document.querySelector('#communeSearch').addEventListener('input',e=>renderCommunes(e.target.value));
 function doSearch(){const q=document.querySelector('#globalSearch').value.trim().toLowerCase(),box=document.querySelector('#searchResults');if(!q){box.classList.remove('hidden');box.textContent='Saisissez un lieu, une commune ou une activité.';return}const found=[...places.filter(p=>(p.name+' '+p.city+' '+p.desc+' '+p.label).toLowerCase().includes(q)).map(p=>({name:p.name,where:p.city,href:'#incontournables'})),...communes.filter(c=>(c.name+' '+c.cp).toLowerCase().includes(q)).map(c=>({name:c.name,where:'Commune · '+c.cp,href:'#annuaire'})),...events.filter(e=>(e.title+' '+e.city+' '+e.desc).toLowerCase().includes(q)).map(e=>({name:e.title,where:e.city,href:'#agenda'}))];box.classList.remove('hidden');box.innerHTML=found.length?'<b>Résultats :</b><ul class="mt-2 space-y-2">'+found.map(x=>`<li><a class="text-emerald-800 underline font-semibold" href="${x.href}">${esc(x.name)}</a> <span class="text-stone-500">— ${esc(x.where)}</span></li>`).join('')+'</ul>':'Aucun résultat dans le contenu actuellement publié. Essayez un autre terme.'}
