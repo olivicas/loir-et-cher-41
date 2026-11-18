@@ -371,10 +371,15 @@ function estCeWeekend(evenement) {
     return evenement.startDate <= formatDate(dimanche) &&
            evenement.endDate >= formatDate(samedi);
 }
+function estUnMarche(evenement) {
+    const titre = (evenement.title || '').toLowerCase();
 
+    return /\bmarch[eé]s?\b/i.test(titre);
+}
 function renderEvents() {
 const f = document.querySelector('#seasonFilter').value;
        const list = events
+    .filter(e => !estUnMarche(e))
        
     .filter(e =>
         f === 'all' ||
