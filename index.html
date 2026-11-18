@@ -366,10 +366,13 @@ async function chargerEvenementsAutomatiques() {
                 events.push({
                     ...evenement,
                     season: evenement.season || '',
-                    period: evenement.startDate
-                        ? new Date(evenement.startDate + 'T12:00:00')
-                            .toLocaleDateString('fr-FR')
-                        : 'Date à confirmer'
+                    
+
+period: evenement.startDate && evenement.endDate
+    ? `Du ${new Date(evenement.startDate + 'T12:00:00').toLocaleDateString('fr-FR')} au ${new Date(evenement.endDate + 'T12:00:00').toLocaleDateString('fr-FR')}`
+    : 'Dates à confirmer'
+
+
                 });
                 existants.add(cle);
             }
