@@ -49,18 +49,32 @@ def find_value(data, wanted_keys):
                 return result
     return ""
 
+
 def get_date(event):
     periods = event.get("takesPlaceAt", [])
+
     if isinstance(periods, dict):
         periods = [periods]
 
+    today = date.today().isoformat()
+    upcoming = []
+
     for period in periods:
+        if not isinstance(period, dict):
+            continue
+
         start = period.get("startDate", "")
-        end = period.get("endDate", "")
-        if start:
-            return start[:10], end[:10] if end else start[:10]
+        end = period.get("endDate", "") or start
+
+        if start and end >= today:
+            upcoming.append((start, end))
+
+    if upcoming:
+        upcoming.sort(key=lambda p: p[0])
+        return upcoming[0]
 
     return "", ""
+
 
 def main():
     headers = {
