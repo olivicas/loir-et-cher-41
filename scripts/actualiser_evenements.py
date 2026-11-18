@@ -100,6 +100,9 @@ def main():
        
 
         for item in payload.get("objects", []):
+            if params is not None and item == payload["objects"][0]:
+                print("EXEMPLE EVENEMENT :", json.dumps(item, ensure_ascii=False)[:3000])
+
             title = first_text(item.get("label"))
             start, end = get_date(item)
 
