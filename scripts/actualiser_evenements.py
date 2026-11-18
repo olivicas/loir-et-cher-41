@@ -126,21 +126,22 @@ def main():
                 print("TEST PERIODES :", len(item.get("takesPlaceAt", [])))
 
 
+
             if not title or not start:
                 continue
 
-        try:
-            if end and end < date.today().isoformat():
+            try:
+                if end and end < date.today().isoformat():
                     continue
-            if not end and start < date.today().isoformat():
+                if not end and start < date.today().isoformat():
                     continue
-        except ValueError:
-            continue
+            except ValueError:
+                continue
 
             description = first_text(item.get("hasDescription"))
             city = find_value(item.get("isLocatedAt", {}), [
                 "addressLocality", "name"
-         ])
+            ])
 
             events.append({
                 "title": title,
@@ -151,8 +152,10 @@ def main():
                 "url": item.get("uri", ""),
                 "category": "Événement",
                 "season": "",
-         })
+            })
+
             print("EVENEMENT AJOUTE :", title)
+
         next_page = payload.get("meta", {}).get("next")
         url = urljoin("https://api.datatourisme.fr", next_page) if next_page else None
         params = None
