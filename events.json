@@ -280,16 +280,6 @@
     "season": ""
   },
   {
-    "title": "L'Hectare \"George sans s\" à Vendôme",
-    "city": "Vendôme",
-    "desc": "",
-    "startDate": "2026-11-17",
-    "endDate": "2026-11-18",
-    "url": "https://data.datatourisme.fr/15/8bf79fdf-6af6-380a-ad2e-31cf1fc89471",
-    "category": "Événement",
-    "season": ""
-  },
-  {
     "title": "Soirée de projection « Le sanglier\" de Laurent Charbonnier",
     "city": "Vineuil",
     "desc": "",
@@ -340,6 +330,16 @@
     "season": ""
   },
   {
+    "title": "Visite guidée à la table de Chambord : vestiges et secrets de cuisine",
+    "city": "Chambord",
+    "desc": "",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-22",
+    "url": "https://data.datatourisme.fr/15/749e9900-6f2a-3855-8318-109c9e1e0e7c",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "Taille de restauration des fruitiers à Boursay",
     "city": "Boursay",
     "desc": "",
@@ -356,6 +356,16 @@
     "startDate": "2026-11-21",
     "endDate": "2026-11-21",
     "url": "https://data.datatourisme.fr/15/f77af9a3-485d-3baa-a71c-10b6865ca8fb",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Causerie - george sand, femme de théâtre",
+    "city": "Saint-Aignan",
+    "desc": "",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "url": "https://data.datatourisme.fr/15/76cc0456-13b7-3675-8e5e-f88b88f00c5b",
     "category": "Événement",
     "season": ""
   },
@@ -756,6 +766,16 @@
     "startDate": "2026-12-11",
     "endDate": "2026-12-11",
     "url": "https://data.datatourisme.fr/15/6e58043e-0b96-3b13-af4a-28afa3a8e6a9",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché de Noël à la ferme à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-13",
+    "url": "https://data.datatourisme.fr/15/266d8af1-fa21-3749-a31a-ea09c5fc8c9f",
     "category": "Événement",
     "season": ""
   },
