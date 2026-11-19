@@ -429,11 +429,16 @@ function renderEvents() {
        
           .filter(e =>
          f === 'all' ||
-         (f === 'weekend' && estCeWeekend(e)) ||
+         f === 'weekend' ||
          e.season === f
     )
 
          .sort((a, b) => {
+        if (f === 'weekend') {
+            const aWeekend = estCeWeekend(a) ? 1 : 0;
+            const bWeekend = estCeWeekend(b) ? 1 : 0;
+            if (aWeekend !== bWeekend) return bWeekend - aWeekend;
+        }
         const dateA = a.startDate ? new Date(a.startDate) : null;
         const dateB = b.startDate ? new Date(b.startDate) : null;
 
