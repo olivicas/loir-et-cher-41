@@ -620,6 +620,16 @@
     "season": ""
   },
   {
+    "title": "Clap 41 - Mufasa : Le Roi Lion à Prunay-Cassereau",
+    "city": "Prunay-Cassereau",
+    "desc": "",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-01",
+    "url": "https://data.datatourisme.fr/15/b8c1025b-5d26-3869-9b5c-e8fdd26956f1",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "Noël aux Caves Monmousseau à Montrichard",
     "city": "Montrichard Val de Cher",
     "desc": "",
@@ -740,6 +750,16 @@
     "season": ""
   },
   {
+    "title": "Clap 41 - Le Comte de Monte Cristo à Meusnes",
+    "city": "Meusnes",
+    "desc": "",
+    "startDate": "2026-12-08",
+    "endDate": "2026-12-08",
+    "url": "https://data.datatourisme.fr/15/1897d49b-64bc-3d52-8ecb-f4a240b02242",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "L'Hectare \"Concert pour mon tout-petit\" à Vendôme",
     "city": "Vendôme",
     "desc": "",
@@ -806,6 +826,16 @@
     "startDate": "2026-12-13",
     "endDate": "2026-12-13",
     "url": "https://data.datatourisme.fr/15/fd6cb70e-4f2f-3ee7-bf29-4993f7e75461",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Clap 41 - Un p'tit truc en plus à Marchenoir",
+    "city": "Marchenoir",
+    "desc": "",
+    "startDate": "2026-12-15",
+    "endDate": "2026-12-15",
+    "url": "https://data.datatourisme.fr/15/94be78a6-9622-3682-abad-310ab87c132c",
     "category": "Événement",
     "season": ""
   },
