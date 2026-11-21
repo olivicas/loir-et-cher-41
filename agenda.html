@@ -1,0 +1,165 @@
+<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Agenda des sorties du Loir-et-Cher | Échappée 41</title><meta name="description" content="Toutes les sorties, festivals et rendez-vous du Loir-et-Cher."><link rel="canonical" href="https://echappee41.fr/agenda.html"><script src="https://cdn.tailwindcss.com"></script><style>body{font-family:Arial,sans-serif;background:#173f32;color:white}</style></head><body><header class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center"><a href="index.html" class="font-bold text-xl">Échappée 41</a><a href="index.html#agenda" class="underline">← Accueil</a></header><main class="max-w-7xl mx-auto px-4 py-12"><p class="text-amber-300 uppercase text-sm font-bold">Sortir & bouger</p><h1 class="text-3xl md:text-5xl font-bold mt-3">Toutes les sorties du Loir-et-Cher</h1><p class="text-stone-200 mt-4">Retrouvez les événements du territoire. Vérifiez les dates auprès des organisateurs.</p><label for="seasonFilter" class="block mt-8 mb-2">Filtrer les sorties</label><select id="seasonFilter" class="bg-white text-stone-900 rounded-lg px-4 py-3"><option value="all">Toutes les saisons</option><option>Printemps</option><option>Été</option><option>Automne</option><option>Hiver</option><option value="weekend">Ce week-end</option></select><div id="eventsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8"></div><p class="text-sm text-stone-300 mt-8">Les périodes habituelles sont indicatives. Consultez les organisateurs.</p></main><script>
+let events=[
+{title:'Festival International des Jardins',city:'Chaumont-sur-Loire',season:'Printemps',period:'Habituellement d’avril à novembre',desc:'Créations paysagères et installations artistiques au domaine.'},
+{title:'Les Rendez-vous de l’Histoire',city:'Blois',season:'Automne',period:'Habituellement en octobre',desc:'Conférences, rencontres, cinéma et salon du livre autour de l’histoire.'},
+{title:'Festival de Chambord',city:'Chambord',season:'Été',period:'Programmation estivale',desc:'Concerts et rendez-vous musicaux dans le cadre du château.'},
+{title:'bd BOUM',city:'Blois',season:'Automne',period:'Habituellement en novembre',desc:'Festival de bande dessinée, rencontres et expositions.'},
+{title:'Les Rockomotives',city:'Vendôme',season:'Automne',period:'Habituellement à l’automne',desc:'Festival consacré aux musiques actuelles et indépendantes.'},
+{title:'Journées Gastronomiques de Sologne',city:'Romorantin-Lanthenay',season:'Automne',period:'Habituellement en octobre',desc:'Produits régionaux, concours et rencontres gourmandes.'},
+{title:'Noël au château',city:'Plusieurs sites',season:'Hiver',period:'Période des fêtes',desc:'Animations et décorations de saison dans plusieurs sites patrimoniaux.'},
+{title:'Fêtes et animations au fil de la Loire',city:'Val de Loire',season:'Été',period:'Selon les communes',desc:'Marchés, animations et rendez-vous en plein air.'}
+];
+
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function estCeWeekend(evenement) {
+    if (!evenement.startDate || !evenement.endDate) {
+        return false;
+    }
+
+    const maintenant = new Date();
+    const aujourdHui = new Date(
+        maintenant.getFullYear(),
+        maintenant.getMonth(),
+        maintenant.getDate()
+    );
+
+    const jour = aujourdHui.getDay();
+    const joursAvantSamedi = (6 - jour + 7) % 7;
+
+    const samedi = new Date(aujourdHui);
+    samedi.setDate(samedi.getDate() + joursAvantSamedi);
+
+    const dimanche = new Date(samedi);
+    dimanche.setDate(dimanche.getDate() + 1);
+
+    const formatDate = date =>
+        date.getFullYear() + '-' +
+        String(date.getMonth() + 1).padStart(2, '0') + '-' +
+        String(date.getDate()).padStart(2, '0');
+
+    return evenement.startDate <= formatDate(dimanche) &&
+           evenement.endDate >= formatDate(samedi);
+}
+function estUnMarche(evenement) {
+    const texte = [
+        evenement.title,
+        evenement.category
+    ].filter(Boolean).join(' ').toLowerCase();
+
+    return /march[eé]|market/i.test(texte);
+}
+
+function renderEvents() {
+       const f = document.querySelector('#seasonFilter').value;
+       const list = events
+          .filter(e => !estUnMarche(e))
+       
+          .filter(e =>
+         f === 'all' ||
+         f === 'weekend' ||
+         e.season === f
+    )
+
+         .sort((a, b) => {
+        if (f === 'weekend') {
+            const aWeekend = estCeWeekend(a) ? 1 : 0;
+            const bWeekend = estCeWeekend(b) ? 1 : 0;
+            if (aWeekend !== bWeekend) return bWeekend - aWeekend;
+        }
+        const dateA = a.startDate ? new Date(a.startDate) : null;
+        const dateB = b.startDate ? new Date(b.startDate) : null;
+
+        if (!dateA && !dateB) return 0;
+        if (!dateA) return 1;
+        if (!dateB) return -1;
+
+        return dateA - dateB;
+    });
+
+    document.querySelector('#eventsGrid').innerHTML = list.map(e => `
+        <article class="rounded-2xl border border-white/15 bg-white/10 p-6">
+            <span class="text-xs font-bold text-amber-300 uppercase">
+                ${esc(e.season || 'Agenda')} · ${esc(e.period || 'Dates à confirmer')}
+            </span>
+
+            <h3 class="text-xl font-bold mt-3">${esc(e.title)}</h3>
+
+            <p class="text-xs text-stone-300 mt-1">${esc(e.city)}</p>
+
+            ${e.desc ? `
+                <p class="text-sm text-stone-100 mt-3">${esc(e.desc)}</p>
+            ` : ''}
+
+            ${e.url && /^https?:\/\//i.test(e.url) ? `
+                <a href="${esc(e.url)}"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-block mt-4 text-amber-300 font-semibold hover:underline">
+                    Voir les détails →
+                </a>
+            ` : ''}
+        </article>
+    `).join('') || '<p>Aucun rendez-vous pour ce filtre.</p>';
+}
+
+document.querySelector('#seasonFilter').addEventListener('change',renderEvents);
+async function chargerEvenementsAutomatiques() {
+    try {
+        const response = await fetch('./events.json', { cache: 'no-store' });
+
+        if (!response.ok) {
+            throw new Error('Impossible de charger events.json');
+        }
+
+        const nouveaux = await response.json();
+
+        if (!Array.isArray(nouveaux)) {
+            throw new Error('Format des événements invalide');
+        }
+
+        const existants = new Set(
+            events.map(e => `${e.title}|${e.city}`)
+        );
+
+        for (const evenement of nouveaux) {
+            const cle = `${evenement.title}|${evenement.city}`;
+
+            if (!existants.has(cle)) {
+                events.push({
+                    ...evenement,
+                    
+season: evenement.season || (() => {
+    if (!evenement.startDate) return '';
+
+    const mois = Number(evenement.startDate.slice(5, 7));
+
+    if ([12, 1, 2].includes(mois)) return 'Hiver';
+    if ([3, 4, 5].includes(mois)) return 'Printemps';
+    if ([6, 7, 8].includes(mois)) return 'Été';
+    return 'Automne';
+})(),
+
+                    
+
+period: evenement.startDate && evenement.endDate
+    ? `Du ${new Date(evenement.startDate + 'T12:00:00').toLocaleDateString('fr-FR')} au ${new Date(evenement.endDate + 'T12:00:00').toLocaleDateString('fr-FR')}`
+    : 'Dates à confirmer'
+
+
+                });
+                existants.add(cle);
+            }
+        }
+
+        renderEvents();
+        console.log(`${nouveaux.length} événements automatiques chargés`);
+    } catch (erreur) {
+        console.error('Erreur de chargement des événements :', erreur);
+    }
+}
+
+chargerEvenementsAutomatiques();
+
+
+renderEvents();
+</script></body></html>
