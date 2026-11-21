@@ -280,16 +280,6 @@
     "season": ""
   },
   {
-    "title": "Soirée de projection « Le sanglier\" de Laurent Charbonnier",
-    "city": "Vineuil",
-    "desc": "",
-    "startDate": "2026-11-20",
-    "endDate": "2026-11-20",
-    "url": "https://data.datatourisme.fr/15/13ebc2f1-f76e-34da-9a32-fa4e59050323",
-    "category": "Événement",
-    "season": ""
-  },
-  {
     "title": "bd BOUM le Festival de Bd de Blois",
     "city": "Blois",
     "desc": "",
@@ -300,32 +290,12 @@
     "season": ""
   },
   {
-    "title": "Instants Nature - Soirée de projection à Vineuil",
-    "city": "Vineuil",
-    "desc": "",
-    "startDate": "2026-11-20",
-    "endDate": "2026-11-20",
-    "url": "https://data.datatourisme.fr/15/3d328a14-dca2-3ebe-acd3-d22d604e25da",
-    "category": "Événement",
-    "season": ""
-  },
-  {
     "title": "Salon du livre d'Art et d'Histoire au château de Cheverny",
     "city": "Cheverny",
     "desc": "",
     "startDate": "2026-11-20",
     "endDate": "2026-11-22",
     "url": "https://data.datatourisme.fr/15/b482f23c-fef5-369c-b054-3bbed2ef6371",
-    "category": "Événement",
-    "season": ""
-  },
-  {
-    "title": "MUSICOSCOPIE à Saint Agil",
-    "city": "Couëtron-au-Perche",
-    "desc": "",
-    "startDate": "2026-11-20",
-    "endDate": "2026-11-20",
-    "url": "https://data.datatourisme.fr/15/c9c549f9-5e8d-3456-aec5-88eabf1d7463",
     "category": "Événement",
     "season": ""
   },
@@ -366,6 +336,16 @@
     "startDate": "2026-11-21",
     "endDate": "2026-11-21",
     "url": "https://data.datatourisme.fr/15/76cc0456-13b7-3675-8e5e-f88b88f00c5b",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Exposition \"L''âge d'or de la moto\" au Musée Matra",
+    "city": "Romorantin-Lanthenay",
+    "desc": "",
+    "startDate": "2026-11-21",
+    "endDate": "2027-03-07",
+    "url": "https://data.datatourisme.fr/15/650bd4d9-0f7e-32b0-8cb7-b48e8fb4521c",
     "category": "Événement",
     "season": ""
   },
