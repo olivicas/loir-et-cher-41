@@ -15,7 +15,7 @@
 <style>
 :root{--forest:#173f32;--forest2:#245744;--gold:#d5ad53;--cream:#f7f5ef;--ink:#24312d}
 html{scroll-behavior:smooth;scroll-padding-top:88px}body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink)}h1,h2,h3,.serif{font-family:'Playfair Display',serif}
-.hero{background-color:#173f32;background-image:linear-gradient(90deg,rgba(8,30,23,.90),rgba(8,30,23,.55) 58%,rgba(8,30,23,.18)),url('https://upload.wikimedia.org/wikipedia/commons/8/80/France_Loir-et-Cher_Chambord_Chateau_03.jpg');background-size:cover;background-position:center center;background-repeat:no-repeat}@media(max-width:767px){.hero{background-position:55% center}}
+.hero{position:relative;background:#173f32;overflow:hidden}.hero-photo{display:block;width:100%;height:auto}.hero-content{position:absolute;inset:0;display:flex;align-items:center;background:linear-gradient(90deg,rgba(8,30,23,.88),rgba(8,30,23,.55) 55%,rgba(8,30,23,.06))}@media(max-width:767px){.hero-content{position:relative;background:#173f32}.hero-content>div{padding-top:2rem;padding-bottom:2rem}}
 .pill{border:1px solid #dedbd1;background:white;border-radius:999px;padding:.55rem .95rem;font-size:.85rem;font-weight:600}
 .pill.active,.btn-primary{background:var(--forest);color:white;border-color:var(--forest)}
 .card{background:white;border:1px solid #e8e4da;border-radius:1.15rem;overflow:hidden;box-shadow:0 4px 18px #1b35240b}
@@ -61,13 +61,15 @@ select option {
 
 <main id="contenu">
 <section id="accueil" class="hero text-white">
- <div class="max-w-7xl mx-auto px-4 py-20 md:py-28">
+ <img class="hero-photo" src="https://upload.wikimedia.org/wikipedia/commons/8/80/France_Loir-et-Cher_Chambord_Chateau_03.jpg" alt="Vue complète du château de Chambord, des toitures jusqu’au pied du château" fetchpriority="high">
+ <div class="hero-content"><div class="w-full max-w-7xl mx-auto px-4 py-20 md:py-28">
   <div class="max-w-3xl">
    <span class="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-bold tracking-wider uppercase">Centre-Val de Loire · Département 41</span>
    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mt-6">Le Loir-et-Cher,<br><em class="text-amber-300">mille façons</em> de le vivre.</h1>
    <p class="text-lg md:text-xl text-stone-100 mt-6 max-w-2xl leading-relaxed">Châteaux de la Loire, forêts de Sologne, villages de caractère, vignobles et douceur des vallées du Loir et du Cher : préparez vos découvertes au cœur du 41.</p>
    
   </div>
+ </div>
  </div>
 </section>
 
