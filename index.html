@@ -320,7 +320,7 @@ select option {
 
 <section id="agenda" class="py-20" style="background:var(--forest);color:white">
  <div class="max-w-7xl mx-auto px-4">
-  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-9"><div><p class="text-xs font-bold uppercase tracking-[.2em] text-amber-300">Sortir & bouger</p><h2 class="text-3xl md:text-4xl mt-2">Les rendez-vous du territoire</h2><p class="text-sm text-stone-200 mt-2">Une sélection de manifestations récurrentes à confirmer avant de se déplacer.</p></div><select id="seasonFilter" class="rounded-xl bg-white/10 border border-white/30 text-white px-4 py-3"><option class="text-stone-900" value="all">Toutes les saisons</option><option class="text-stone-900">Printemps</option><option class="text-stone-900">Été</option><option class="text-stone-900">Automne</option><option class="text-stone-900">Hiver</option>
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-9"><div><p class="text-xs font-bold uppercase tracking-[.2em] text-amber-300">Sortir & bouger</p><h2 class="text-3xl md:text-4xl mt-2">Les rendez-vous du territoire</h2><p class="text-sm text-stone-200 mt-2">Les événements du week-end à venir en priorité, puis les prochaines sorties du Loir-et-Cher.</p></div><select id="seasonFilter" class="rounded-xl bg-white/10 border border-white/30 text-white px-4 py-3"><option class="text-stone-900" value="all">Toutes les saisons</option><option class="text-stone-900">Printemps</option><option class="text-stone-900">Été</option><option class="text-stone-900">Automne</option><option class="text-stone-900">Hiver</option>
 <option value="weekend">Ce week-end</option>
 </select></div>
   <div id="eventsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
@@ -420,30 +420,18 @@ function estUnMarche(evenement) {
 
 function renderEvents() {
        const f = document.querySelector('#seasonFilter').value;
+       const aujourdHui = new Date();
+       const dateLocale = [aujourdHui.getFullYear(), String(aujourdHui.getMonth()+1).padStart(2,'0'), String(aujourdHui.getDate()).padStart(2,'0')].join('-');
        const list = events
           .filter(e => !estUnMarche(e))
-       
-          .filter(e =>
-         f === 'all' ||
-         f === 'weekend' ||
-         e.season === f
-    )
-
-         .sort((a, b) => {
-        if (f === 'weekend') {
-            const aWeekend = estCeWeekend(a) ? 1 : 0;
-            const bWeekend = estCeWeekend(b) ? 1 : 0;
-            if (aWeekend !== bWeekend) return bWeekend - aWeekend;
-        }
-        const dateA = a.startDate ? new Date(a.startDate) : null;
-        const dateB = b.startDate ? new Date(b.startDate) : null;
-
-        if (!dateA && !dateB) return 0;
-        if (!dateA) return 1;
-        if (!dateB) return -1;
-
-        return dateA - dateB;
-    });
+          .filter(e => !e.endDate || e.endDate >= dateLocale)
+          .filter(e => f === 'all' || (f === 'weekend' ? estCeWeekend(e) : e.season === f))
+          .sort((a,b) => {
+              const aWeekend = estCeWeekend(a), bWeekend = estCeWeekend(b);
+              if (aWeekend !== bWeekend) return aWeekend ? -1 : 1;
+              if (!!a.startDate !== !!b.startDate) return a.startDate ? -1 : 1;
+              return (a.startDate || '').localeCompare(b.startDate || '');
+          });
 
     document.querySelector('#eventsGrid').innerHTML = list.slice(0, 3).map(e => `
         <article class="rounded-2xl border border-white/15 bg-white/10 p-6">
@@ -468,7 +456,7 @@ function renderEvents() {
                 </a>
             ` : ''}
         </article>
-    `).join('') || '<p>Aucun rendez-vous pour ce filtre.</p>';
+    `).join('') || (f === 'weekend' ? '<p>Aucun événement confirmé pour le week-end à venir.</p>' : '<p>Aucun rendez-vous pour ce filtre.</p>');
 }
 
 document.querySelector('#seasonFilter').addEventListener('change',renderEvents);
