@@ -280,26 +280,6 @@
     "season": ""
   },
   {
-    "title": "bd BOUM le Festival de Bd de Blois",
-    "city": "Blois",
-    "desc": "",
-    "startDate": "2026-11-20",
-    "endDate": "2026-11-22",
-    "url": "https://data.datatourisme.fr/15/b34df197-1f24-3b71-b968-673a655887c0",
-    "category": "Événement",
-    "season": ""
-  },
-  {
-    "title": "Visite guidée à la table de Chambord : vestiges et secrets de cuisine",
-    "city": "Chambord",
-    "desc": "",
-    "startDate": "2026-11-21",
-    "endDate": "2026-11-22",
-    "url": "https://data.datatourisme.fr/15/749e9900-6f2a-3855-8318-109c9e1e0e7c",
-    "category": "Événement",
-    "season": ""
-  },
-  {
     "title": "Exposition \"L''âge d'or de la moto\" au Musée Matra",
     "city": "Romorantin-Lanthenay",
     "desc": "",
@@ -310,82 +290,12 @@
     "season": ""
   },
   {
-    "title": "Marché de Noël à Naveil",
-    "city": "Naveil",
-    "desc": "",
-    "startDate": "2026-11-21",
-    "endDate": "2026-11-22",
-    "url": "https://data.datatourisme.fr/15/61145d13-3e40-3578-8264-8f4fcf66aaea",
-    "category": "Événement",
-    "season": ""
-  },
-  {
     "title": "Expositions Chaumont-Photo-sur-Loire",
     "city": "Chaumont-sur-Loire",
     "desc": "",
     "startDate": "2026-11-22",
     "endDate": "2026-12-31",
     "url": "https://data.datatourisme.fr/15/ff96cf5a-7532-35ea-936d-f5052220fc82",
-    "category": "Événement",
-    "season": ""
-  },
-  {
-    "title": "Concours de dressage - Circuit départemental",
-    "city": "La Chaussée-Saint-Victor",
-    "desc": "",
-    "startDate": "2026-11-22",
-    "endDate": "2026-11-22",
-    "url": "https://data.datatourisme.fr/15/e38eb878-eed7-3b2a-ac36-9329b2a73313",
-    "category": "Événement",
-    "season": ""
-  },
-  {
-    "title": "Marché de la Vallée-de-Ronsard à Couture-sur-Loir",
-    "city": "Vallée-de-Ronsard",
-    "desc": "",
-    "startDate": "2026-11-22",
-    "endDate": "2026-11-22",
-    "url": "https://data.datatourisme.fr/15/5dfbff5b-63a9-3530-bb16-32ee50d4dc53",
-    "category": "Événement",
-    "season": ""
-  },
-  {
-    "title": "Champignons en Sologne",
-    "city": "Lamotte-Beuvron",
-    "desc": "",
-    "startDate": "2026-11-22",
-    "endDate": "2026-11-22",
-    "url": "https://data.datatourisme.fr/15/eae859e3-b741-3447-ba24-34f48c43c94a",
-    "category": "Événement",
-    "season": ""
-  },
-  {
-    "title": "Marché de Noël à Pezou",
-    "city": "Pezou",
-    "desc": "",
-    "startDate": "2026-11-22",
-    "endDate": "2026-11-22",
-    "url": "https://data.datatourisme.fr/15/8779c9bd-a5b3-3a40-81de-1b007050d257",
-    "category": "Événement",
-    "season": ""
-  },
-  {
-    "title": "Marché de Selommes",
-    "city": "Selommes",
-    "desc": "",
-    "startDate": "2026-11-22",
-    "endDate": "2026-11-22",
-    "url": "https://data.datatourisme.fr/15/1cc52a9a-0d09-3506-b4fb-c32f2d0db90a",
-    "category": "Événement",
-    "season": ""
-  },
-  {
-    "title": "Vents d’Automne – de la Neva aux Rives de l’Arno",
-    "city": "Le Controis-en-Sologne",
-    "desc": "",
-    "startDate": "2026-11-22",
-    "endDate": "2026-11-22",
-    "url": "https://data.datatourisme.fr/15/5471eb77-9a84-3343-8152-e7948cac5b81",
     "category": "Événement",
     "season": ""
   },
@@ -446,6 +356,16 @@
     "startDate": "2026-11-27",
     "endDate": "2026-11-29",
     "url": "https://data.datatourisme.fr/15/b6485da0-caaf-30ad-b433-d44db8a11b51",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Visite guidée à la table de Chambord : vestiges et secrets de cuisine",
+    "city": "Chambord",
+    "desc": "",
+    "startDate": "2026-11-28",
+    "endDate": "2026-11-29",
+    "url": "https://data.datatourisme.fr/15/749e9900-6f2a-3855-8318-109c9e1e0e7c",
     "category": "Événement",
     "season": ""
   },
@@ -770,6 +690,16 @@
     "season": ""
   },
   {
+    "title": "Marché de la Vallée-de-Ronsard à Couture-sur-Loir",
+    "city": "Vallée-de-Ronsard",
+    "desc": "",
+    "startDate": "2026-12-13",
+    "endDate": "2026-12-13",
+    "url": "https://data.datatourisme.fr/15/5dfbff5b-63a9-3530-bb16-32ee50d4dc53",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "Clap 41 - Un p'tit truc en plus à Marchenoir",
     "city": "Marchenoir",
     "desc": "",
@@ -880,6 +810,16 @@
     "season": ""
   },
   {
+    "title": "Marché de Selommes",
+    "city": "Selommes",
+    "desc": "",
+    "startDate": "2026-12-20",
+    "endDate": "2026-12-20",
+    "url": "https://data.datatourisme.fr/15/1cc52a9a-0d09-3506-b4fb-c32f2d0db90a",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "\"Murmures nocturnes\" - Visite guidée au château royal de Blois",
     "city": "Blois",
     "desc": "",
@@ -926,6 +866,16 @@
     "startDate": "2026-12-28",
     "endDate": "2026-12-30",
     "url": "https://data.datatourisme.fr/15/7d386545-f9d8-3c2a-8fe5-a56621759ace",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Le petit-déjeuner des lamas chez Lama Émoi",
+    "city": "Saint-Aignan",
+    "desc": "",
+    "startDate": "2026-12-28",
+    "endDate": "2026-12-28",
+    "url": "https://data.datatourisme.fr/15/e857ccd7-f155-368c-bcd5-1afa3f99e2ee",
     "category": "Événement",
     "season": ""
   },
@@ -1246,6 +1196,16 @@
     "startDate": "2027-10-10",
     "endDate": "2027-10-10",
     "url": "https://data.datatourisme.fr/15/be37c8e1-520d-3933-a226-b32b0e20d009",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "bd BOUM le Festival de Bd de Blois",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2027-11-19",
+    "endDate": "2027-11-21",
+    "url": "https://data.datatourisme.fr/15/b34df197-1f24-3b71-b968-673a655887c0",
     "category": "Événement",
     "season": ""
   }
