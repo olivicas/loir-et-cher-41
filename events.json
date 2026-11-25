@@ -300,12 +300,12 @@
     "season": ""
   },
   {
-    "title": "Clap 41 - \"Les Petites Victoires\" à La Madeleine-Villefrouin",
-    "city": "La Madeleine-Villefrouin",
+    "title": "Exposition « L'Atelier du sensible »  à Montoire-sur-le Loir",
+    "city": "Montoire-sur-le-Loir",
     "desc": "",
     "startDate": "2026-11-24",
-    "endDate": "2026-11-24",
-    "url": "https://data.datatourisme.fr/15/aed91c70-db05-37f4-bb82-7a2691e0a06d",
+    "endDate": "2026-12-05",
+    "url": "https://data.datatourisme.fr/15/49481653-287a-3fd9-9bcb-aa415778790b",
     "category": "Événement",
     "season": ""
   },
@@ -346,6 +346,16 @@
     "startDate": "2026-11-27",
     "endDate": "2027-01-17",
     "url": "https://data.datatourisme.fr/15/4b2d6efd-28aa-3023-ac30-47494f3646dc",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Exposition Regards Nature à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29",
+    "url": "https://data.datatourisme.fr/15/38529edd-0f2c-3a0e-9178-e715759e7dda",
     "category": "Événement",
     "season": ""
   },
@@ -480,6 +490,16 @@
     "season": ""
   },
   {
+    "title": "Exposition « À la découverte de la science-fiction » à Selommes",
+    "city": "Selommes",
+    "desc": "",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-23",
+    "url": "https://data.datatourisme.fr/15/cc71c2be-7e91-399b-a8e4-af98454de709",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "Clap 41 - Mufasa : Le Roi Lion à Prunay-Cassereau",
     "city": "Prunay-Cassereau",
     "desc": "",
@@ -496,6 +516,16 @@
     "startDate": "2026-12-01",
     "endDate": "2026-12-31",
     "url": "https://data.datatourisme.fr/15/7c723ff6-355b-3ef7-9152-f3a1f1aa8437",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Une petite histoire avec un peu d'astronomie à Montoire-sur-le Loir",
+    "city": "Montoire-sur-le-Loir",
+    "desc": "",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-01",
+    "url": "https://data.datatourisme.fr/15/de387253-1830-362d-bf5a-3b5b69bb45c5",
     "category": "Événement",
     "season": ""
   },
@@ -610,12 +640,62 @@
     "season": ""
   },
   {
+    "title": "Ciné-média à Savigny-sur-Braye",
+    "city": "Savigny-sur-Braye",
+    "desc": "",
+    "startDate": "2026-12-08",
+    "endDate": "2026-12-08",
+    "url": "https://data.datatourisme.fr/15/f552cac0-6a2a-36eb-bb75-887e587a5e68",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "Clap 41 - Le Comte de Monte Cristo à Meusnes",
     "city": "Meusnes",
     "desc": "",
     "startDate": "2026-12-08",
     "endDate": "2026-12-08",
     "url": "https://data.datatourisme.fr/15/1897d49b-64bc-3d52-8ecb-f4a240b02242",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Ciné-média à Montoire-sur-le Loir",
+    "city": "Montoire-sur-le-Loir",
+    "desc": "",
+    "startDate": "2026-12-08",
+    "endDate": "2026-12-08",
+    "url": "https://data.datatourisme.fr/15/b5c87bb9-f7b0-3fcf-bd44-4d43d929231e",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "BB Bouquine à Savigny-sur-Braye",
+    "city": "Savigny-sur-Braye",
+    "desc": "",
+    "startDate": "2026-12-09",
+    "endDate": "2026-12-09",
+    "url": "https://data.datatourisme.fr/15/36f6366e-0000-387f-a456-1c78d05b4bc5",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Ciné-média jeunesse à Savigny-sur-Braye",
+    "city": "Savigny-sur-Braye",
+    "desc": "",
+    "startDate": "2026-12-09",
+    "endDate": "2026-12-09",
+    "url": "https://data.datatourisme.fr/15/a09c17e9-5d8a-34b8-ae05-4ebf9239c1c3",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "BB Bouquine à Montoire-sur-le Loir",
+    "city": "Montoire-sur-le-Loir",
+    "desc": "",
+    "startDate": "2026-12-09",
+    "endDate": "2026-12-09",
+    "url": "https://data.datatourisme.fr/15/a314a453-5045-3238-aabb-211be61a255f",
     "category": "Événement",
     "season": ""
   },
@@ -730,6 +810,26 @@
     "season": ""
   },
   {
+    "title": "Exposition : Patrice Rat à Selommes",
+    "city": "Selommes",
+    "desc": "",
+    "startDate": "2026-12-16",
+    "endDate": "2026-12-21",
+    "url": "https://data.datatourisme.fr/15/e66e8d06-256a-3b3b-ab7f-8c541e906ec1",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Spectacle « Les secrets du Père Noël » à Savigny-sur-Braye",
+    "city": "Savigny-sur-Braye",
+    "desc": "",
+    "startDate": "2026-12-16",
+    "endDate": "2026-12-16",
+    "url": "https://data.datatourisme.fr/15/bc648cf0-0c13-3c65-984d-1e24df015033",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "Concert de Noël de l'école de musique à Vendôme",
     "city": "Vendôme",
     "desc": "",
@@ -756,6 +856,16 @@
     "startDate": "2026-12-17",
     "endDate": "2026-12-17",
     "url": "https://data.datatourisme.fr/15/6d7ff160-3880-31df-b760-3be3bad9340f",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Spectacle pour les tout-petits à Selommes",
+    "city": "Selommes",
+    "desc": "",
+    "startDate": "2026-12-17",
+    "endDate": "2026-12-17",
+    "url": "https://data.datatourisme.fr/15/6c81fcab-f02e-34f9-a29a-ae24709f20a0",
     "category": "Événement",
     "season": ""
   },
