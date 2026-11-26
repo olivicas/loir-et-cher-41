@@ -261,9 +261,9 @@ select option {
 <section id="agenda" class="py-20" style="background:var(--forest);color:white">
  <div class="max-w-7xl mx-auto px-4">
   <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-9"><div><p class="text-xs font-bold uppercase tracking-[.2em] text-amber-300">Sortir & bouger</p><h2 class="text-3xl md:text-4xl mt-2">Les rendez-vous du territoire</h2><p class="text-sm text-stone-200 mt-2">Les événements du week-end à venir en priorité, puis les prochaines sorties du Loir-et-Cher.</p></div><select id="seasonFilter" class="rounded-xl bg-white/10 border border-white/30 text-white px-4 py-3"><option class="text-stone-900" value="all">Toutes les saisons</option><option class="text-stone-900">Printemps</option><option class="text-stone-900">Été</option><option class="text-stone-900">Automne</option><option class="text-stone-900">Hiver</option>
-<option value="weekend">Ce week-end</option>
+<option class="text-stone-900" value="weekend">Ce week-end</option>
 </select></div>
-  <div id="eventsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  <p id="weekendHeading" class="text-lg font-bold text-amber-300 mb-4"></p><div id="eventsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
   <div class="text-center mt-8"><a href="agenda.html" class="inline-block rounded-xl bg-amber-300 px-6 py-3 font-bold text-emerald-950">Voir toutes les sorties →</a></div>
   <p class="text-xs text-stone-300 mt-6">Les périodes indiquées sont des repères habituels, pas un calendrier confirmé pour l'année en cours. Consultez l'organisateur avant toute visite.</p>
  </div>
@@ -321,34 +321,20 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 function renderPlaces(filter='all'){const data=(filter==='all'?places:places.filter(p=>p.type===filter)).slice(0,3);document.querySelector('#placesGrid').innerHTML=data.map(p=>`<article class="card flex flex-col"><img loading="lazy" class="h-52 w-full object-cover" src="${p.img}" alt="${esc(p.name)}"><div class="p-5 flex-1 flex flex-col"><span class="text-xs uppercase tracking-wider font-bold text-amber-700">${esc(p.label)} · ${esc(p.city)}</span><h3 class="text-xl font-bold mt-2">${esc(p.name)}</h3><p class="text-sm text-stone-600 mt-2 flex-1">${esc(p.desc)}</p><div class="flex flex-wrap gap-2 mt-5"><a class="btn-primary rounded-lg px-4 py-2 text-sm font-bold" href="${p.url}" target="_blank" rel="noopener noreferrer">Site officiel ↗</a><a class="rounded-lg px-4 py-2 text-sm font-bold border border-stone-300" href="https://www.openstreetmap.org/search?query=${encodeURIComponent(p.map)}" target="_blank" rel="noopener noreferrer">Carte ↗</a></div></div></article>`).join('')}
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderPlaces(b.dataset.filter)}));
 
-function estCeWeekend(evenement) {
-    if (!evenement.startDate || !evenement.endDate) {
-        return false;
-    }
-
-    const maintenant = new Date();
-    const aujourdHui = new Date(
-        maintenant.getFullYear(),
-        maintenant.getMonth(),
-        maintenant.getDate()
-    );
-
-    const jour = aujourdHui.getDay();
-    const joursAvantSamedi = (6 - jour + 7) % 7;
-
-    const samedi = new Date(aujourdHui);
-    samedi.setDate(samedi.getDate() + joursAvantSamedi);
-
-    const dimanche = new Date(samedi);
-    dimanche.setDate(dimanche.getDate() + 1);
-
-    const formatDate = date =>
-        date.getFullYear() + '-' +
-        String(date.getMonth() + 1).padStart(2, '0') + '-' +
-        String(date.getDate()).padStart(2, '0');
-
-    return evenement.startDate <= formatDate(dimanche) &&
-           evenement.endDate >= formatDate(samedi);
+function weekendDates() {
+    const today = new Date();
+    today.setHours(12,0,0,0);
+    const day = today.getDay();
+    const saturday = new Date(today);
+    saturday.setDate(today.getDate() + (day === 0 ? -1 : (6-day+7)%7));
+    const sunday = new Date(saturday);
+    sunday.setDate(saturday.getDate()+1);
+    const iso = d => [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');
+    return {start:iso(saturday),end:iso(sunday),today:iso(today),label:saturday.toLocaleDateString('fr-FR',{day:'numeric',month:'long'})+' et '+sunday.toLocaleDateString('fr-FR',{day:'numeric',month:'long'})};
+}
+function estCeWeekend(e) {
+    const w = weekendDates();
+    return !!e.startDate && e.startDate <= w.end && (e.endDate || e.startDate) >= (w.today > w.start ? w.today : w.start);
 }
 function estUnMarche(evenement) {
     const texte = [
@@ -365,19 +351,28 @@ function renderEvents() {
        const dateLocale = [aujourdHui.getFullYear(), String(aujourdHui.getMonth()+1).padStart(2,'0'), String(aujourdHui.getDate()).padStart(2,'0')].join('-');
        const list = events
           .filter(e => !estUnMarche(e))
-          .filter(e => !e.endDate || e.endDate >= dateLocale)
+          .filter(e => !(e.endDate || e.startDate) || (e.endDate || e.startDate) >= dateLocale)
           .filter(e => f === 'all' || (f === 'weekend' ? estCeWeekend(e) : e.season === f))
           .sort((a,b) => {
               const aWeekend = estCeWeekend(a), bWeekend = estCeWeekend(b);
               if (aWeekend !== bWeekend) return aWeekend ? -1 : 1;
+              if (aWeekend && bWeekend) {
+                  const w = weekendDates();
+                  const aStarts = a.startDate >= w.start, bStarts = b.startDate >= w.start;
+                  if (aStarts !== bStarts) return aStarts ? -1 : 1;
+                  if (!aStarts) return (b.startDate || '').localeCompare(a.startDate || '');
+              }
               if (!!a.startDate !== !!b.startDate) return a.startDate ? -1 : 1;
               return (a.startDate || '').localeCompare(b.startDate || '');
           });
 
+    const w = weekendDates();
+    const hasWeekend = list.some(estCeWeekend);
+    document.querySelector('#weekendHeading').textContent = hasWeekend ? 'Ce week-end : '+w.label : (f === 'all' || f === 'weekend' ? 'Aucune sortie datée pour le week-end des '+w.label+' dans notre agenda' : '');
     document.querySelector('#eventsGrid').innerHTML = list.slice(0, 3).map(e => `
         <article class="rounded-2xl border border-white/15 bg-white/10 p-6">
             <span class="text-xs font-bold text-amber-300 uppercase">
-                ${esc(e.season || 'Agenda')} · ${esc(e.period || 'Dates à confirmer')}
+                ${estCeWeekend(e) ? 'Ce week-end · ' : ''}${esc(e.season || 'Agenda')} · ${esc(e.period || 'Dates à confirmer')}
             </span>
 
             <h3 class="text-xl font-bold mt-3">${esc(e.title)}</h3>
