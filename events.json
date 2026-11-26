@@ -310,16 +310,6 @@
     "season": ""
   },
   {
-    "title": "CabarettO",
-    "city": "Romorantin-Lanthenay",
-    "desc": "",
-    "startDate": "2026-11-25",
-    "endDate": "2026-11-25",
-    "url": "https://data.datatourisme.fr/15/5f71bc4e-e3ef-38cc-9cac-e1e6cfd65232",
-    "category": "Événement",
-    "season": ""
-  },
-  {
     "title": "À travers l'histoire des Huguenots",
     "city": "Talcy",
     "desc": "",
@@ -336,16 +326,6 @@
     "startDate": "2026-11-27",
     "endDate": "2026-11-27",
     "url": "https://data.datatourisme.fr/15/aa7db760-8665-3f45-9e7b-4ec38ee20ff9",
-    "category": "Événement",
-    "season": ""
-  },
-  {
-    "title": "Abbaye on Ice à Vendôme",
-    "city": "Vendôme",
-    "desc": "",
-    "startDate": "2026-11-27",
-    "endDate": "2027-01-17",
-    "url": "https://data.datatourisme.fr/15/4b2d6efd-28aa-3023-ac30-47494f3646dc",
     "category": "Événement",
     "season": ""
   },
@@ -410,6 +390,16 @@
     "season": ""
   },
   {
+    "title": "Abbaye on Ice à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-11-28",
+    "endDate": "2026-12-03",
+    "url": "https://data.datatourisme.fr/15/4b2d6efd-28aa-3023-ac30-47494f3646dc",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "Festillésime 41 - Incandescence à Mondoubleau",
     "city": "Mondoubleau",
     "desc": "",
@@ -460,6 +450,16 @@
     "season": ""
   },
   {
+    "title": "Randonnée pédestre à Saint Martin des Bois",
+    "city": "Saint-Martin-des-Bois",
+    "desc": "",
+    "startDate": "2026-11-29",
+    "endDate": "2026-11-29",
+    "url": "https://data.datatourisme.fr/15/15953966-791b-3dd7-a52e-de6313be0997",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "Noël au château de Cheverny",
     "city": "Cheverny",
     "desc": "",
@@ -496,6 +496,16 @@
     "startDate": "2026-12-01",
     "endDate": "2026-12-23",
     "url": "https://data.datatourisme.fr/15/cc71c2be-7e91-399b-a8e4-af98454de709",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Animal Art Salbris",
+    "city": "Salbris",
+    "desc": "",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/c238fea1-8b4e-315e-9a44-1ebcedf024d1",
     "category": "Événement",
     "season": ""
   },
@@ -574,7 +584,7 @@
     "city": "Montrichard Val de Cher",
     "desc": "",
     "startDate": "2026-12-05",
-    "endDate": "2026-12-31",
+    "endDate": "2026-12-19",
     "url": "https://data.datatourisme.fr/15/09b3534b-c72e-3ff9-9c09-1fe75d1f1af5",
     "category": "Événement",
     "season": ""
@@ -770,6 +780,16 @@
     "season": ""
   },
   {
+    "title": "Marché de Noël à Salbris",
+    "city": "Salbris",
+    "desc": "",
+    "startDate": "2026-12-13",
+    "endDate": "2026-12-13",
+    "url": "https://data.datatourisme.fr/15/f7d17b6a-ad16-3ee0-b7ea-21ec99196f6b",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "Marché de la Vallée-de-Ronsard à Couture-sur-Loir",
     "city": "Vallée-de-Ronsard",
     "desc": "",
@@ -894,7 +914,7 @@
     "city": "Couëtron-au-Perche",
     "desc": "",
     "startDate": "2026-12-19",
-    "endDate": "2027-01-03",
+    "endDate": "2026-12-20",
     "url": "https://data.datatourisme.fr/15/b7e0119e-001d-3f2d-a2b8-9b67e388cc3a",
     "category": "Événement",
     "season": ""
@@ -930,6 +950,16 @@
     "season": ""
   },
   {
+    "title": "Equifun de Noël",
+    "city": "La Chaussée-Saint-Victor",
+    "desc": "",
+    "startDate": "2026-12-20",
+    "endDate": "2026-12-20",
+    "url": "https://data.datatourisme.fr/15/e2432582-4561-3eea-a4a4-382e82877be8",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "\"Murmures nocturnes\" - Visite guidée au château royal de Blois",
     "city": "Blois",
     "desc": "",
@@ -946,6 +976,16 @@
     "startDate": "2026-12-21",
     "endDate": "2026-12-31",
     "url": "https://data.datatourisme.fr/15/163fe128-3853-34b7-9366-2823166dcedb",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Stage d'équitation pendant les vacances de Noël !",
+    "city": "La Chaussée-Saint-Victor",
+    "desc": "",
+    "startDate": "2026-12-21",
+    "endDate": "2026-12-24",
+    "url": "https://data.datatourisme.fr/15/0793c8c8-27c1-38e0-b7e4-b6eed0b9683c",
     "category": "Événement",
     "season": ""
   },
