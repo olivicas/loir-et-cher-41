@@ -77,6 +77,34 @@ select option {
 
 
 
+<section id="a-la-une" class="py-12 md:py-16 bg-white" aria-labelledby="une-titre">
+ <div class="max-w-7xl mx-auto px-4">
+  <div class="flex flex-wrap items-end justify-between gap-3 mb-6"><div><p class="text-xs font-bold uppercase tracking-[.2em] text-amber-700">À découvrir maintenant</p><h2 id="une-titre" class="text-3xl md:text-4xl mt-2" style="color:var(--forest)">À la une</h2></div><span class="text-sm text-stone-500">Dernier article</span></div>
+  <article class="card overflow-hidden grid md:grid-cols-2" id="une-article">
+   <img id="une-photo" src="https://live.staticflickr.com/65535/48288556677_4d90708937.jpg" alt="Dolmen de la Pierre de Minuit à Pontlevoy" class="w-full h-64 md:h-full min-h-[260px] object-cover" loading="lazy">
+   <div class="p-6 md:p-10 flex flex-col justify-center"><p id="une-categorie" class="text-xs font-bold uppercase tracking-wider text-amber-700">Insolite · Pontlevoy</p><h3 id="une-article-titre" class="text-2xl md:text-3xl mt-3" style="color:var(--forest)">La Pierre de Minuit : le mystérieux dolmen qui s’anime la nuit de Noël</h3><p id="une-resume" class="text-stone-600 mt-4 leading-relaxed">Un monument néolithique, deux légendes de Noël et une histoire étonnante de chercheurs de trésor.</p><div><a id="une-lien" href="insolite-pierre-de-minuit.html" class="inline-block mt-5 rounded-xl bg-emerald-900 text-white px-6 py-3 font-bold hover:bg-emerald-800">Lire l’article →</a></div><p id="une-credit" class="text-xs text-stone-500 mt-4">Photo : <a href="https://www.flickr.com/photos/sybarite48/48288556677/">Daniel Jolivet / Flickr</a> · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> (recadrage possible).</p></div>
+  </article>
+ </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // A dated article card anywhere on the home page can become the featured article.
+  const cards = Array.from(document.querySelectorAll('main article[data-published], section:not(#a-la-une) article[data-published]')).filter(a => Number.isFinite(Date.parse(a.dataset.published)) && Date.parse(a.dataset.published) <= Date.now() && a.querySelector('h3') && a.querySelector('img') && a.querySelector('a[href$=".html"]'));
+  cards.sort((a,b)=>Date.parse(b.dataset.published)-Date.parse(a.dataset.published));
+  const card = cards[0] || Array.from(document.querySelectorAll('#insolite article')).pop();
+  if (!card) return;
+  const img=card.querySelector('img'), title=card.querySelector('h3'), link=card.querySelector('a[href$=".html"]'), category=card.querySelector('p.uppercase'), summary=card.querySelector('p.text-stone-600'), credit=card.querySelector('p.text-xs.text-stone-500');
+  if (!img || !title || !link || !summary || !credit) return;
+  document.getElementById('une-photo').src=img.src;
+  document.getElementById('une-photo').alt=img.alt;
+  document.getElementById('une-article-titre').textContent=title.textContent;
+  document.getElementById('une-lien').href=link.href;
+  document.getElementById('une-resume').textContent=summary.textContent;
+  document.getElementById('une-categorie').textContent=category ? category.textContent : 'À découvrir';
+  document.getElementById('une-credit').replaceChildren(...Array.from(credit.childNodes).map(n=>n.cloneNode(true)));
+});
+</script>
+
 <section id="incontournables" class="py-20 bg-[#eeece4]">
  <div class="max-w-7xl mx-auto px-4">
   <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-9"><div><p class="text-xs font-bold uppercase tracking-[.2em] text-amber-700">Patrimoine & découvertes</p><h2 class="text-3xl md:text-4xl mt-2" style="color:var(--forest)">Les incontournables du 41</h2></div><div id="placeFilters" class="hidden"><button class="pill active" data-filter="all">Tout voir</button><button class="pill" data-filter="chateaux">Châteaux</button><button class="pill" data-filter="nature">Nature & loisirs</button><button class="pill" data-filter="villes">Villes & villages</button></div></div>
