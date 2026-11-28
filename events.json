@@ -310,16 +310,6 @@
     "season": ""
   },
   {
-    "title": "L'Hectare \"Gabriel Saglio à la Bougie\" à Vendôme",
-    "city": "Vendôme",
-    "desc": "",
-    "startDate": "2026-11-27",
-    "endDate": "2026-11-27",
-    "url": "https://data.datatourisme.fr/15/aa7db760-8665-3f45-9e7b-4ec38ee20ff9",
-    "category": "Événement",
-    "season": ""
-  },
-  {
     "title": "Exposition Regards Nature à Vendôme",
     "city": "Vendôme",
     "desc": "",
@@ -386,6 +376,16 @@
     "startDate": "2026-11-28",
     "endDate": "2026-12-03",
     "url": "https://data.datatourisme.fr/15/4b2d6efd-28aa-3023-ac30-47494f3646dc",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Des Lyres d'Hiver, un Noël magique à Blois",
+    "city": "Blois",
+    "desc": "",
+    "startDate": "2026-11-28",
+    "endDate": "2026-12-31",
+    "url": "https://data.datatourisme.fr/15/ca6c063b-03c7-31f8-882d-739297d9bc0f",
     "category": "Événement",
     "season": ""
   },
@@ -890,6 +890,26 @@
     "season": ""
   },
   {
+    "title": "Marché de Noël à Danzé",
+    "city": "Danzé",
+    "desc": "",
+    "startDate": "2026-12-18",
+    "endDate": "2026-12-18",
+    "url": "https://data.datatourisme.fr/15/3533541a-b373-31fa-b303-63fcb6f63372",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "La magie des fêtes s’invite dans les rues à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-12-19",
+    "endDate": "2026-12-20",
+    "url": "https://data.datatourisme.fr/15/78a8383a-4c7e-3e31-aee5-1ef0321eeb6c",
+    "category": "Événement",
+    "season": ""
+  },
+  {
     "title": "Exposition temporaire \"Les maîtres de l’évasion\" à la Maison de la Magie",
     "city": "Blois",
     "desc": "",
@@ -906,6 +926,16 @@
     "startDate": "2026-12-19",
     "endDate": "2026-12-20",
     "url": "https://data.datatourisme.fr/15/b7e0119e-001d-3f2d-a2b8-9b67e388cc3a",
+    "category": "Événement",
+    "season": ""
+  },
+  {
+    "title": "Marché des Artisans d’Art du Vendômois à Vendôme",
+    "city": "Vendôme",
+    "desc": "",
+    "startDate": "2026-12-19",
+    "endDate": "2026-12-20",
+    "url": "https://data.datatourisme.fr/15/fa093c0e-2247-38cc-b5dc-ea882ac8ee14",
     "category": "Événement",
     "season": ""
   },
